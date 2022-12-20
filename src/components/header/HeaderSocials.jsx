@@ -1,19 +1,20 @@
-import { BsLinkedin, BsWhatsapp } from 'react-icons/bs'
+import { BsLinkedin } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
+import { IoLogoTwitter } from 'react-icons/ıo'
 
 
 
 const HeaderSocials = () => {
     return (
         <div className='header-socials'>
-            <a href="https://www.linkedin.com/" target="_blank" rel='noreferrer'>
+            <a href="https://www.linkedin.com/in/at%C4%B1f-%C5%9Fim%C5%9Fek-179b07177/" target="_blank" rel='noreferrer'>
                 <BsLinkedin />
             </a>
-            <a href="https://github.com/" target="_blank" rel='noreferrer'>
+            <a href="https://github.com/atifsimsek" target="_blank" rel='noreferrer'>
                 <FaGithub />
             </a>
-            <a href="https://twitter.com/" target="_blank" rel='noreferrer'>
-                <BsWhatsapp />
+            <a href="https://twitter.com/atifsimsek_" target="_blank" rel='noreferrer'>
+                <IoLogoTwitter />
             </a>
 
         </div>

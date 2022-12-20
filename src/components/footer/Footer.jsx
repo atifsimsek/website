@@ -39,7 +39,7 @@ const Footer = () => {
         <a target="_blank" rel='noreferrer' href="https://www.instagram.com/atifsimsek/">
           <FiInstagram />
         </a>
-        <a target="_blank" rel='noreferrer' href="https://twitter.com/atifsimsek" >
+        <a target="_blank" rel='noreferrer' href="https://twitter.com/atifsimsek_" >
           <IoLogoTwitter />
         </a>
       </div>
