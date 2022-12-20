@@ -1,6 +1,6 @@
 import { BsLinkedin } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
-import { IoLogoTwitter } from 'react-icons/ıo'
+import { IoLogoTwitter } from 'react-icons/io'
 
 
 
