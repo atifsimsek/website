@@ -1,6 +1,6 @@
 import "./header.css"
 import CTA from "./CTA"
-import ME from "assets/My project.png"
+import ME from "assets/atifsimsek.png"
 import HeaderSocials from "./HeaderSocials"
 import LanguageButton from "./LanguageButton"
 import { useSelector } from "react-redux"
