@@ -82,9 +82,14 @@ section>h2 {
   color: var(--color-light)
 }
 
+label {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 a {
   color: var(--color-primary);
   transition: var(--transition);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a:hover {
