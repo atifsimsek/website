@@ -43,7 +43,7 @@ const About = () => {
           </div>
 
           <p>
-            {language === "tr" ? " 1995 Sinop-Merkez doğumluyum, 2018 Haziran ayında işletme fakültesinden mezun olduktan sonra çocukluğumdan beri ilgi duyduğum ve dünyanın geleceğine yön vereceğini düşündüğüm yazılım alanına yöneldim, bu yönde ilk adımım Sakarya Üniversitesi Bilişim Sistemleri bölümünde yüksek lisans yapmaya başlamak oldu. Mezun olup Askerliğimi yaptıktan sonra kendimi geliştirmeye başladım." : "I was born in 1995 in Sinop, and after graduating from the business faculty in June 2018, I turned to the software field, which I have been interested in since childhood and think will shape the future of the world. My first step in this direction was to start a Master's degree in Computer Systems at Sakarya University. After graduating and serving my military service, I began to develop myself."}
+            {language === "tr" ? " 1995 Sinop-Merkez doğumluyum, 2018 Haziran ayında işletme fakültesinden mezun olduktan sonra çocukluğumdan beri ilgi duyduğum ve dünyanın geleceğine yön vereceğini düşündüğüm yazılım alanına yöneldim, bu yönde ilk adımım Sakarya Üniversitesi Bilişim Sistemleri bölümünde yüksek lisans yapmaya başlamak oldu. Mezun olup Askerliğimi yaptıktan sonra kendimi geliştirmeye başladım." : "I was born in 1995 in Sinop, and after graduating from the business faculty in June 2018, I tended to the software field, which I have been interested in since childhood and think will shape the future of the world. My first step in this direction was to start a Master's degree in Computer Systems at Sakarya University. After graduating and serving my military service, I began to develop myself."}
 
           </p>
           <p className="detail">
@@ -53,7 +53,7 @@ const About = () => {
             {language === "tr" ? "Yaptığım projeleri github hesabımda paylaşmaktayım. Bazı projelerimi aşağıdaki projelerim kısmından inceleyebilirsiniz." : "I share my projects on my github account. You can review some of my projects from the following projects section."}
           </p>
 
-          <a href="#contact" className="btn btn-primary">{language === "tr" ? "İletişime Geç" : "Concat With Me"}</a>
+          <a href="#contact" className="btn btn-primary">{language === "tr" ? "İletişime Geç" : "Contact With Me"}</a>
 
         </div>
       </div>
