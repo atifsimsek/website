@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./footer.css"
 import { FaFacebook } from "react-icons/fa"
 import { FiInstagram } from "react-icons/fi"

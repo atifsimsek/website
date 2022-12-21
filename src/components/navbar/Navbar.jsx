@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./navbar.css"
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiBook, BiMessageSquareDetail,BiCodeBlock } from "react-icons/bi";
+import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { FaLaptopCode } from "react-icons/fa";
 
 import { useState } from "react";

@@ -1,7 +1,6 @@
 import "./about.css"
 import img1 from "assets/mohammad-rahmani-N5bT5RctFZ8-unsplash.jpg"
 import { FaAward } from "react-icons/fa"
-import { HiUsers } from "react-icons/hi"
 import { TbCertificate } from "react-icons/tb"
 import { VscFolderLibrary } from "react-icons/vsc"
 import { useSelector } from "react-redux"

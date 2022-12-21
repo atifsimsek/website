@@ -11,12 +11,12 @@ const CTA = () => {
             {
                 language === "tr" ?
                     <div div className="cta">
-                        <a className="btn" href={Cv} download>Cv İndir</a>
+                        <a className="btn" href={Cv} download="Atıf Şimşek Cv.pdf">Cv İndir</a>
                         <a className="btn btn-primary" href="#contact">İletişime Geç</a>
                     </div>
                     :
                     <div div className="cta">
-                        <a className="btn" href={CvEng} download>Downland Cv</a>
+                        <a className="btn" href={CvEng} download="Atıf Şimşek Cv Eng.pdf">Downland Cv</a>
                         <a className="btn btn-primary" href="#contact">Let's Talk</a>
                     </div>
             }
