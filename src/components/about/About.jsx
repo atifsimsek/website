@@ -53,7 +53,7 @@ const About = () => {
             {language === "tr" ? "Yaptığım projeleri github hesabımda paylaşmaktayım. Bazı projelerimi aşağıdaki projelerim kısmından inceleyebilirsiniz." : "I share my projects on my github account. You can review some of my projects from the following projects section."}
           </p>
 
-          <a href="#contact" className="btn btn-primary">{language === "tr" ? "İletişime Geç" : "Let's Talk"}</a>
+          <a href="#contact" className="btn btn-primary">{language === "tr" ? "İletişime Geç" : "Concat With Me"}</a>
 
         </div>
       </div>
