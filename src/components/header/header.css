@@ -1,4 +1,3 @@
-
 header {
   height: 100vh;
   padding-top: 7rem;
@@ -59,12 +58,12 @@ header {
 
 
 
-.me img{
+.me img {
   width: 91%;
   height: 91%;
   position: absolute;
   bottom: 0;
- 
+
 }
 
 
@@ -86,9 +85,7 @@ header {
 
 @media screen and (max-width:1024px) {
   header {
-
-    height: 68vh;
-
+    margin-bottom: -1rem;
   }
 
 }
