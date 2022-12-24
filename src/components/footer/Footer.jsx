@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./footer.css"
-import { FaFacebook } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { BsLinkedin } from "react-icons/bs"
 import { FiInstagram } from "react-icons/fi"
 import { IoLogoTwitter } from "react-icons/io"
 import { useSelector } from "react-redux"
@@ -8,7 +9,7 @@ const Footer = () => {
   const { language } = useSelector(state => state.languageReducer)
   return (
     <footer>
-      
+
       {
         language === "tr"
           ?
@@ -34,8 +35,11 @@ const Footer = () => {
 
       }
       <div className="footer-socials">
-        <a target="_blank" rel='noreferrer' href="https://www.facebook.com/atif.simsek">
-          <FaFacebook />
+        <a href="https://github.com/atifsimsek" target="_blank" rel='noreferrer'>
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/at%C4%B1f-%C5%9Fim%C5%9Fek-179b07177/" target="_blank" rel='noreferrer'>
+          <BsLinkedin />
         </a>
         <a target="_blank" rel='noreferrer' href="https://www.instagram.com/atifsimsek/">
           <FiInstagram />
@@ -43,6 +47,7 @@ const Footer = () => {
         <a target="_blank" rel='noreferrer' href="https://twitter.com/atifsimsek_" >
           <IoLogoTwitter />
         </a>
+
       </div>
       <div className="footer-copyright">
         <small>&copy; Atıf Şimşek</small>

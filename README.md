@@ -1,4 +1,4 @@
 ## My Website
-[Click To Review](https://atifsimsek.github.io/react-tailwind-spotify-clone/)
+[Click To Review](https://atifsimsek.netlify.app/)
 
 You Can Visit My Website Here
