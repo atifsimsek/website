@@ -25,7 +25,7 @@ const About = () => {
             <article className="about-card">
               <FaAward className="about-icon" />
               <h5>{language === "tr" ? "Deneyim" : "Experience"}</h5>
-              <small>{language === "tr" ? "9-10 aylık kodlama deneyimi" : "9-10 months of coding experience"}</small>
+              <small>{language === "tr" ? "1 yıl kodlama deneyimi" : "1 year of coding experience"}</small>
 
             </article>
             <article className="about-card">
@@ -47,7 +47,7 @@ const About = () => {
 
           </p>
           <p className="detail">
-            {language === "tr" ? "Yaklaşık 9-10 aydır front-end alanında kendimi geliştirmekteyim. Html Css ve Javascript'te belirli bir seviyeye geldikten sonra React öğrenip geliştirmeler yapmaya başladım. Git, npm, vscode, visual studio gibi araçları kullanıyorum,  Redux, React-Router-Dom, Formik, Yup gibi paketleri ve Context Api kullanabiliyorum. Seyahat engelim bulunmamaktadır." : "    I have been developing myself about the front-end field  about approximately 9-10 months. After I reached a certain level in Html Css and Javascript, I started learning React and making improvements., I started learning React and making improvements. I can use tools as like Git, npm, vscode, and visual studio, and I am able to use packages like Redux, React-Router-Dom, Formik, Yup, and the Context Api. I have no travel restrictions."}
+            {language === "tr" ? "Yaklaşık 1 yıldır front-end alanında kendimi geliştirmekteyim. Html Css ve Javascript'te belirli bir seviyeye geldikten sonra React öğrenip geliştirmeler yapmaya başladım. Git, npm, vscode, visual studio gibi araçları kullanıyorum,  Redux, React-Router-Dom, Formik, Yup gibi paketleri ve Context Api kullanabiliyorum. Seyahat engelim bulunmamaktadır." : "    I have been developing myself about the front-end field  about approximately 1 year. After I reached a certain level in Html Css and Javascript, I started learning React and making improvements., I started learning React and making improvements. I can use tools as like Git, npm, vscode, and visual studio, and I am able to use packages like Redux, React-Router-Dom, Formik, Yup, and the Context Api. I have no travel restrictions."}
           </p>
           <p className="detail">
             {language === "tr" ? "Yaptığım projeleri github hesabımda paylaşmaktayım. Bazı projelerimi aşağıdaki projelerim kısmından inceleyebilirsiniz." : "I share my projects on my github account. You can review some of my projects from the following projects section."}

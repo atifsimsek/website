@@ -31,14 +31,14 @@ const Experience = () => {
               <BsPatchCheckFill className="experience-details-icon" />
               <div>
                 <h4>JavaScript</h4>
-                <ProgressBar progress={80} width={80} />
+                <ProgressBar progress={70} width={70} />
               </div>
             </article>
             <article className="experience-details">
               <BsPatchCheckFill className="experience-details-icon" />
               <div>
                 <h4>React</h4>
-                <ProgressBar progress={75} width={75} />
+                <ProgressBar progress={70} width={70} />
               </div>
             </article>
             <article className="experience-details">
@@ -65,7 +65,7 @@ const Experience = () => {
             <article className="experience-details">
               <BsPatchCheckFill className="experience-details-icon" />
               <div>
-                <h4>Sass</h4>
+                <h4>Scss/Sass</h4>
                 <ProgressBar progress={85} width={85} />
               </div>
             </article>
