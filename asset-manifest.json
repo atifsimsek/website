@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.9b427ff4.css",
+    "main.js": "/website/static/js/main.3deff605.js",
+    "static/media/mohammad-rahmani-N5bT5RctFZ8-unsplash.jpg": "/website/static/media/mohammad-rahmani-N5bT5RctFZ8-unsplash.4837f6a0df47040eef6a.jpg",
+    "static/media/erdemyuksel.png": "/website/static/media/erdemyuksel.41b8a537cae9401eccdf.png",
+    "static/media/Berber.png": "/website/static/media/Berber.4bfe6f97956d03d87f2b.png",
+    "static/media/getir.png": "/website/static/media/getir.710fa4a8967dca595c33.png",
+    "static/media/atifsimsek.png": "/website/static/media/atifsimsek.f42870535e4fe06de1bb.png",
+    "static/media/Spotify.png": "/website/static/media/Spotify.aa83efcce6d2f7beb89f.png",
+    "static/media/Pokedex.png": "/website/static/media/Pokedex.c7962d00c31d278d8ebc.png",
+    "static/media/Atıf Şimşek Cv.pdf": "/website/static/media/Atıf Şimşek Cv.f849cb8ecb7a81dcc2cd.pdf",
+    "static/media/Atıf Şimşek Cv Eng.pdf": "/website/static/media/Atıf Şimşek Cv Eng.5f5b0cfe9b1c7caf6e5e.pdf",
+    "static/media/Brand-Colors.png": "/website/static/media/Brand-Colors.7f760fa98805f4af16a2.png",
+    "index.html": "/website/index.html",
+    "main.9b427ff4.css.map": "/website/static/css/main.9b427ff4.css.map",
+    "main.3deff605.js.map": "/website/static/js/main.3deff605.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b427ff4.css",
+    "static/js/main.3deff605.js"
+  ]
+}
