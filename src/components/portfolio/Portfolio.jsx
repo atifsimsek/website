@@ -4,7 +4,9 @@ import img2 from "assets/Projects İmages/erdemyuksel.png"
 import img3 from "assets/Projects İmages/Berber.png"
 import img4 from "assets/Projects İmages/Spotify.png"
 import img5 from "assets/Projects İmages/Brand-Colors.png"
-import img6 from "assets/Projects İmages/ecommerce.png"
+import img6 from "assets/Projects İmages/Pokedex.png"
+import img7 from "assets/Projects İmages/ecommerce.png"
+import img8 from "assets/Projects İmages/todoapp.png"
 import { useSelector } from "react-redux"
 const Portfolio = () => {
 
@@ -23,7 +25,7 @@ const Portfolio = () => {
 
                             <article className="portfolio-item">
                                 <div className="portfolio-item-image">
-                                    <img src={img6} alt="" />
+                                    <img src={img7} alt="" />
                                 </div>
                                 <h3>Ecommerce React-Firebase Website</h3>
                                 <div className="portfolio-item-cta">
@@ -91,6 +93,38 @@ const Portfolio = () => {
 
                             </article>
 
+
+
+
+                            <article className="portfolio-item">
+                                <div className="portfolio-item-image">
+                                    <img src={img8} alt="" />
+                                </div>
+                                <h3>React Redux Todo App</h3>
+                                <div className="portfolio-item-cta">
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/react-redux-thunk-todo-app">Github </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://react-redux-thunk-todo.netlify.app/">Live Demo </a>
+                                </div>
+
+                            </article>
+
+
+
+                            <article className="portfolio-item">
+                                <div className="portfolio-item-image">
+                                    <img src={img6} alt="" />
+                                </div>
+                                <h3>Vanilla Js Pokemon Api Pokedex</h3>
+                                <div className="portfolio-item-cta">
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/html-css-js-projects/tree/main/JavaScript%20Project/11%20-%20Pokedex">Github </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/html-css-js-projects/JavaScript%20Project/11%20-%20Pokedex/index.html">Live Demo </a>
+                                </div>
+
+                            </article>
+
+
+
+
                         </div>
 
                     </section>
@@ -104,7 +138,7 @@ const Portfolio = () => {
 
                             <article className="portfolio-item">
                                 <div className="portfolio-item-image">
-                                    <img src={img6} alt="" />
+                                    <img src={img7} alt="" />
                                 </div>
                                 <h3>Ecommerce React-Firebase Website</h3>
                                 <div className="portfolio-item-cta">
@@ -169,7 +203,23 @@ const Portfolio = () => {
                                 </div>
 
                             </article>
-                            {/* <article className="portfolio-item">
+
+
+                            <article className="portfolio-item">
+                                <div className="portfolio-item-image">
+                                    <img src={img8} alt="" />
+                                </div>
+                                <h3>React Redux Todo App</h3>
+                                <div className="portfolio-item-cta">
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/react-redux-thunk-todo-app">Github </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://react-redux-thunk-todo.netlify.app/">Live Demo </a>
+                                </div>
+
+                            </article>
+
+
+
+                            <article className="portfolio-item">
                                 <div className="portfolio-item-image">
                                     <img src={img6} alt="" />
                                 </div>
@@ -179,7 +229,7 @@ const Portfolio = () => {
                                     <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/html-css-js-projects/JavaScript%20Project/11%20-%20Pokedex/index.html">Live Demo </a>
                                 </div>
 
-                            </article> */}
+                            </article>
                         </div>
 
                     </section>
