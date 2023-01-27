@@ -4,7 +4,7 @@ import img2 from "assets/Projects İmages/erdemyuksel.png"
 import img3 from "assets/Projects İmages/Berber.png"
 import img4 from "assets/Projects İmages/Spotify.png"
 import img5 from "assets/Projects İmages/Brand-Colors.png"
-import img6 from "assets/Projects İmages/Pokedex.png"
+import img6 from "assets/Projects İmages/ecommerce.png"
 import { useSelector } from "react-redux"
 const Portfolio = () => {
 
@@ -19,6 +19,22 @@ const Portfolio = () => {
                         <h2>Projelerim</h2>
 
                         <div className="container portfolio-container">
+
+
+                            <article className="portfolio-item">
+                                <div className="portfolio-item-image">
+                                    <img src={img6} alt="" />
+                                </div>
+                                <h3>Ecommerce React-Firebase Website</h3>
+                                <div className="portfolio-item-cta">
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/react-redux-firebase-ecommerce">Github </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/react-redux-firebase-ecommerce/">Demo İçin Tıklayın </a>
+                                </div>
+
+                            </article>
+
+
+
                             <article className="portfolio-item">
                                 <div className="portfolio-item-image">
                                     <img src={img1} alt="" />
@@ -74,17 +90,7 @@ const Portfolio = () => {
                                 </div>
 
                             </article>
-                            <article className="portfolio-item">
-                                <div className="portfolio-item-image">
-                                    <img src={img6} alt="" />
-                                </div>
-                                <h3>Vanilla Js Pokemon Api Pokedex</h3>
-                                <div className="portfolio-item-cta">
-                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/html-css-js-projects/tree/main/JavaScript%20Project/11%20-%20Pokedex">Github </a>
-                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/html-css-js-projects/JavaScript%20Project/11%20-%20Pokedex/index.html">Demo İçin Tıklayın </a>
-                                </div>
 
-                            </article>
                         </div>
 
                     </section>
@@ -94,6 +100,20 @@ const Portfolio = () => {
                         <h2>Projects</h2>
 
                         <div className="container portfolio-container">
+
+
+                            <article className="portfolio-item">
+                                <div className="portfolio-item-image">
+                                    <img src={img6} alt="" />
+                                </div>
+                                <h3>Ecommerce React-Firebase Website</h3>
+                                <div className="portfolio-item-cta">
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/react-redux-firebase-ecommerce">Github </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/react-redux-firebase-ecommerce/">Demo İçin Tıklayın </a>
+                                </div>
+
+                            </article>
+
                             <article className="portfolio-item">
                                 <div className="portfolio-item-image">
                                     <img src={img1} alt="" />
@@ -149,7 +169,7 @@ const Portfolio = () => {
                                 </div>
 
                             </article>
-                            <article className="portfolio-item">
+                            {/* <article className="portfolio-item">
                                 <div className="portfolio-item-image">
                                     <img src={img6} alt="" />
                                 </div>
@@ -159,7 +179,7 @@ const Portfolio = () => {
                                     <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/html-css-js-projects/JavaScript%20Project/11%20-%20Pokedex/index.html">Live Demo </a>
                                 </div>
 
-                            </article>
+                            </article> */}
                         </div>
 
                     </section>
