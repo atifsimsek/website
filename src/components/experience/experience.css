@@ -5,6 +5,7 @@
 
 }
 
+
 .experience-container>div {
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
@@ -31,28 +32,34 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
+    place-items: center;
 
 }
 
 .content-language {
 
-    width: 100%;
-    text-align: center;
     grid-column: 1/ span 2;
+
 }
 
-.content-language h4 {
-    margin-left: -2.9rem;
-}
-
-.language-progress span {
-    margin-left: -2.3rem !important;
-}
 
 .experience-details {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.experience-details .title {
+    display: flex;
+    align-items: center;
     gap: 1rem;
 
+}
+
+.title h4 {
+    margin-top: 0.3rem;
 }
 
 .experience-details-icon {
@@ -61,7 +68,7 @@
 }
 
 .progress-container {
-    margin-left: -2rem;
+
     margin-top: 0.625rem;
     width: 160px;
     background-color: rgba(253, 253, 253, 0.758);
@@ -140,14 +147,5 @@
     .vs {
         letter-spacing: -1.2px;
     }
-
-    .content-language h4 {
-        margin-left: -1.4rem;
-    }
-
-    .language-progress span {
-        margin-left: -1.6rem !important;
-    }
-
 
 }

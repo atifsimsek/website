@@ -45,6 +45,13 @@
     bottom: 0;
 }
 
+.more {
+    margin-top: 1rem;
+    width: 250px;
+    justify-self: center;
+    grid-column: 1/ span 3;
+}
+
 
 /* ****** MEDİUM DEVİCES ****** */
 
@@ -52,6 +59,10 @@
     .portfolio-container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
+    }
+
+    .more{
+        grid-column: 1/ span 2;
     }
 
 }
@@ -67,5 +78,8 @@
         width: 90%;
     }
 
+    .more{
+        grid-column: 1/ span 1;
+    }
 
 }

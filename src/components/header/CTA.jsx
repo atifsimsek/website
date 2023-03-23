@@ -1,4 +1,4 @@
-import Cv from "assets/Atıf Şimşek Cv.pdf"
+import Cv from "assets/Atıf Şimşek Cv Tr.pdf"
 import CvEng from "assets/Atıf Şimşek Cv Eng.pdf"
 import { useSelector } from "react-redux"
 
@@ -10,12 +10,12 @@ const CTA = () => {
         <>
             {
                 language === "tr" ?
-                    <div div className="cta">
-                        <a className="btn" href={Cv} download="Atıf Şimşek Cv.pdf">Cv İndir</a>
+                    <div  className="cta">
+                        <a className="btn" href={Cv} download="Atıf Şimşek Cv Tr.pdf">Cv İndir</a>
                         <a className="btn btn-primary" href="#contact">İletişime Geç</a>
                     </div>
                     :
-                    <div div className="cta">
+                    <div  className="cta">
                         <a className="btn" href={CvEng} download="Atıf Şimşek Cv Eng.pdf">Downland Cv</a>
                         <a className="btn btn-primary" href="#contact">Contact With Me</a>
                     </div>

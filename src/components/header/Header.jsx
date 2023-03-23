@@ -10,9 +10,9 @@ const Header = () => {
 
     const { language } = useSelector(state => state.languageReducer)
 
-    useEffect(() => {
-        fetch(`https://api.countapi.xyz/update/asimsek.com/${process.env.REACT_APP_KEY}?amount=1`)
-    }, [])
+    // useEffect(() => {
+    //     fetch(`https://api.countapi.xyz/update/asimsek.com/${process.env.REACT_APP_KEY}?amount=1`)
+    // }, [])
 
     return (
         <header className="no-margin" id="#">
