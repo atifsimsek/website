@@ -11,11 +11,16 @@ import img9 from "assets/Projects İmages/youtube-clone-img.png"
 import img10 from "assets/Projects İmages/movie-app-img.png"
 import { useSelector } from "react-redux"
 import { useState } from "react"
+
 const Portfolio = () => {
 
     const [show, setShow] = useState(false);
 
     const { language } = useSelector(state => state.languageReducer)
+
+    const clickHandle = () => {
+        setShow(!show)
+    }
 
     return (
         <>
@@ -152,8 +157,10 @@ const Portfolio = () => {
                             }
 
 
-                            {show ? null : <button onClick={() => setShow(true)} className="btn btn-primary more">Daha Fazla Göster</button>}
-                            {show && <button onClick={() => setShow(false)} className="btn btn-primary more">Daha Az Göster</button>}
+                            {show
+                                ? <button onClick={clickHandle} className="btn btn-primary more">Daha Az Göster</button>
+                                : <button onClick={clickHandle} className="btn btn-primary more">Daha Fazla Göster</button>}
+
 
                         </div>
 
@@ -173,7 +180,7 @@ const Portfolio = () => {
                                 <h3>Ecommerce React-Firebase Website</h3>
                                 <div className="portfolio-item-cta">
                                     <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/react-redux-firebase-ecommerce">Github </a>
-                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/react-redux-firebase-ecommerce/">Demo İçin Tıklayın </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://atifsimsek.github.io/react-redux-firebase-ecommerce/">Live Demo </a>
                                 </div>
 
                             </article>
@@ -185,7 +192,7 @@ const Portfolio = () => {
                                 <h3>TypeScript React Youtube Clone</h3>
                                 <div className="portfolio-item-cta">
                                     <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/typescript-react-youtube-clone">Github </a>
-                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://typescript-react-youtube-clone.vercel.app/">Demo İçin Tıklayın </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://typescript-react-youtube-clone.vercel.app/">Live Demo</a>
                                 </div>
 
                             </article>
@@ -196,7 +203,7 @@ const Portfolio = () => {
                                 <h3>Nextjs Movie App</h3>
                                 <div className="portfolio-item-cta">
                                     <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/next.js-movie-app">Github </a>
-                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://next-js-movie-app-lilac.vercel.app/">Demo İçin Tıklayın </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://next-js-movie-app-lilac.vercel.app/">Live Demo </a>
                                 </div>
 
                             </article>
@@ -281,9 +288,11 @@ const Portfolio = () => {
                                     </article>
                                 </>
                             }
-                            
-                        {show ? null : <button onClick={() => setShow(true)} className="btn btn-primary more">Show More</button>}
-                        {show && <button onClick={() => setShow(false)} className="btn btn-primary more">Show Less</button>}
+
+                            {show
+                                ? <button onClick={clickHandle} className="btn btn-primary more">Show Less</button>
+                                : <button onClick={clickHandle} className="btn btn-primary more">Show More</button>}
+
                         </div>
 
 
