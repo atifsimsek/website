@@ -9,6 +9,7 @@ import img7 from "assets/Projects İmages/ecommerce.png"
 import img8 from "assets/Projects İmages/todoapp.png"
 import img9 from "assets/Projects İmages/youtube-clone-img.png"
 import img10 from "assets/Projects İmages/movie-app-img.png"
+import img11 from "assets/Projects İmages/Weather App Context API.png"
 import { useSelector } from "react-redux"
 import { useState } from "react"
 
@@ -64,6 +65,18 @@ const Portfolio = () => {
                                 <div className="portfolio-item-cta">
                                     <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/next.js-movie-app">Github </a>
                                     <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://next-js-movie-app-lilac.vercel.app/">Demo İçin Tıklayın </a>
+                                </div>
+
+                            </article>
+
+                            <article className="portfolio-item">
+                                <div className="portfolio-item-image">
+                                    <img src={img11} alt="" />
+                                </div>
+                                <h3>Weather App Context API</h3>
+                                <div className="portfolio-item-cta">
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/patika.dev-react/tree/main/03-react-task-3">Github </a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://weather-app-context-api-patika.vercel.app/">Demo İçin Tıklayın </a>
                                 </div>
 
                             </article>
@@ -202,11 +215,25 @@ const Portfolio = () => {
                                 </div>
                                 <h3>Nextjs Movie App</h3>
                                 <div className="portfolio-item-cta">
-                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/next.js-movie-app">Github </a>
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/next.js-movie-app">Github</a>
                                     <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://next-js-movie-app-lilac.vercel.app/">Live Demo </a>
                                 </div>
 
                             </article>
+
+                            
+                            <article className="portfolio-item">
+                                <div className="portfolio-item-image">
+                                    <img src={img11} alt="" />
+                                </div>
+                                <h3>Weather App Context API</h3>
+                                <div className="portfolio-item-cta">
+                                    <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/atifsimsek/patika.dev-react/tree/main/03-react-task-3">Github</a>
+                                    <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://weather-app-context-api-patika.vercel.app/">Live Demo</a>
+                                </div>
+
+                            </article>
+
 
 
                             <article className="portfolio-item">
