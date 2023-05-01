@@ -9,7 +9,7 @@ import Education from "components/education/education";
 
 function App() {
   return (
-    < >
+    <>
       <Header />
       <Navbar />
       <About />
@@ -18,7 +18,6 @@ function App() {
       <Education />
       <Contact />
       <Footer />
-
     </>
   );
 }

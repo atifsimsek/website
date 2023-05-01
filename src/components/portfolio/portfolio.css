@@ -1,86 +1,79 @@
 .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    margin: auto;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: auto;
 }
 
 .portfolio-item {
-    background: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .portfolio-item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+  border-color: var(--color-primary-variant);
+  background: transparent;
 }
 
 .portfolio-item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .portfolio-item-image img {
-    border-radius: 1.5rem;
-    width: 100%;
+  border-radius: 1.5rem;
+  width: 100%;
 }
 
 .portfolio-item h3 {
-    margin: 1.2rem 0 2rem;
+  margin: 1.2rem 0 2rem;
 }
 
 .portfolio-item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    bottom: 0;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  bottom: 0;
 }
 
 .more {
-    margin-top: 1rem;
-    width: 250px;
-    justify-self: center;
-    grid-column: 1/ span 3;
-    font-size: 1.1rem;
+  margin-top: 1rem;
+  width: 250px;
+  justify-self: center;
+  grid-column: 1 / span 3;
+  font-size: 1.1rem;
 }
-
 
 /* ****** MEDİUM DEVİCES ****** */
 
-@media screen and (max-width:1024px) {
-    .portfolio-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+@media screen and (max-width: 1024px) {
+  .portfolio-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
 
-    .more{
-        grid-column: 1/ span 2;
-    }
-
+  .more {
+    grid-column: 1 / span 2;
+  }
 }
-
 
 /* ****** SMALL DEVİCES ****** */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 90%;
+  }
 
-    .portfolio-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        width: 90%;
-    }
-
-    .more{
-        grid-column: 1/ span 1;
-    }
-
+  .more {
+    grid-column: 1 / span 1;
+  }
 }

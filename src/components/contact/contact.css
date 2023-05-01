@@ -1,146 +1,121 @@
 #contact {
-    position: relative;
-    overflow: hidden;
-    
-    
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-container {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
-    margin-bottom: 8rem;
-   
-  
-
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  margin-bottom: 8rem;
 }
 
 .contact-options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .contact-option {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .contact-option:hover {
-    background: transparent;
-    border-color: var(---primary-variant);
+  background: transparent;
+  border-color: var(---primary-variant);
 }
 
 .contact-option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-option a {
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
 }
 
-
 .contact-option h5 {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 /* ***** FORM ***** */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: var(--text-white);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--text-white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* ***** Email Send ***** */
 
 .email-send {
-    position: absolute;
-    width: 20rem;
-    background-color: var(--color-bg-variant);
-    bottom: 3.5rem;
-    right: 1.5rem;
-    padding: 1.7rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    transition: all 1100ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: translate(400px);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
-
-
+  position: absolute;
+  width: 20rem;
+  background-color: var(--color-bg-variant);
+  bottom: 3.5rem;
+  right: 1.5rem;
+  padding: 1.7rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 1100ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translate(400px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .email-send .icon {
-    font-size: 1.5rem;
-    margin-right: 0.8rem;
-    color: var(--color-primary);
-
-
-
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  color: var(--color-primary);
 }
 
 .email-send span {
-    font-weight: 500;
-    color: var(--color-white);
-
+  font-weight: 500;
+  color: var(--color-white);
 }
 
 .email-send-show {
-   
-    transform: translateX(0px);
-   
+  transform: translateX(0px);
 }
-
-
 
 /* ****** MEDİUM DEVİCES ****** */
 
-@media screen and (max-width:1024px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-    .email-send {
-
-        bottom: 0.5rem;
-        
-        
-
-    }
-
+  .email-send {
+    bottom: 0.5rem;
+  }
 }
-
 
 /* ****** SMALL DEVİCES ****** */
 
-@media screen and (max-width:600px) {
-    .contact-container {
-        width: 80%;
-    }
-  
-
+@media screen and (max-width: 600px) {
+  .contact-container {
+    width: 80%;
+  }
 }
