@@ -177,33 +177,34 @@ const Portfolio = () => {
                 </a>
               </div>
             </article>
-            <article className="portfolio-item">
-              <div className="portfolio-item-image">
-                <img src={img3} alt="" />
-              </div>
-              <h3>HTML-CSS-JS Beber Örnek Website</h3>
-              <div className="portfolio-item-cta">
-                <a
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/atifsimsek/html-css-js-projects/tree/main/Html-Css-Js%20WebSite%20Project/10%20-%20Barber%20Website%20%2BJs"
-                >
-                  Github{" "}
-                </a>
-                <a
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://atifsimsek.github.io/html-css-js-projects/Html-Css-Js%20WebSite%20Project/10%20-%20Barber%20Website%20%2BJs/index.html"
-                >
-                  Demo İçin Tıklayın{" "}
-                </a>
-              </div>
-            </article>
 
             {show && (
               <>
+                <article className="portfolio-item">
+                  <div className="portfolio-item-image">
+                    <img src={img3} alt="" />
+                  </div>
+                  <h3>HTML-CSS-JS Beber Örnek Website</h3>
+                  <div className="portfolio-item-cta">
+                    <a
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://github.com/atifsimsek/html-css-js-projects/tree/main/Html-Css-Js%20WebSite%20Project/10%20-%20Barber%20Website%20%2BJs"
+                    >
+                      Github{" "}
+                    </a>
+                    <a
+                      className="btn btn-primary"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://atifsimsek.github.io/html-css-js-projects/Html-Css-Js%20WebSite%20Project/10%20-%20Barber%20Website%20%2BJs/index.html"
+                    >
+                      Demo İçin Tıklayın{" "}
+                    </a>
+                  </div>
+                </article>
+
                 <article className="portfolio-item">
                   <div className="portfolio-item-image">
                     <img src={img4} alt="" />
