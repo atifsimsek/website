@@ -8,13 +8,13 @@ import img7 from "assets/Projects İmages/ecommerce.png";
 import img8 from "assets/Projects İmages/todo-app.png";
 import img9 from "assets/Projects İmages/youtube-clone.jpeg";
 import img10 from "assets/Projects İmages/movie-app.jpeg";
-import img11 from "assets/Projects İmages/weather-app.jpeg";
-import img12 from "assets/Projects İmages/star-wars.jpeg";
+import img12 from "assets/Projects İmages/library.jpeg";
+import img13 from "assets/Projects İmages/star-wars.jpeg";
 
 export const projectsData = [
   {
     title: "Star Wars Api",
-    image: img12,
+    image: img13,
     github: "https://github.com/atifsimsek/FMSS-front-end-final-case",
     live: "https://fmss-front-end-final-case.vercel.app/",
   },
@@ -23,6 +23,13 @@ export const projectsData = [
     image: img7,
     github: "https://github.com/atifsimsek/react-redux-firebase-ecommerce",
     live: "https://atifsimsek.github.io/react-redux-firebase-ecommerce/",
+  },
+  {
+    title: "Library",
+    image: img12,
+    github:
+      "https://github.com/atifsimsek/patika.dev-react/tree/main/06-react-task-6",
+    live: "https://patika-library.vercel.app/",
   },
   {
     title: "TypeScript React Youtube Clone",
@@ -85,7 +92,8 @@ export const projectsData = [
   {
     title: "Vanilla Js Pokemon Api Pokedex",
     image: img6,
-    github: "https://github.com/atifsimsek/vanilla-js-pokemon-api-pokedex",
-    live: "https://atifsimsek.github.io/vanilla-js-pokemon-api-pokedex/",
+    github:
+      "https://github.com/atifsimsek/html-css-js-projects/tree/main/JavaScript%20Project/11%20-%20Pokedex",
+    live: "https://atifsimsek.github.io/html-css-js-projects/JavaScript%20Project/11%20-%20Pokedex/index.html/",
   },
 ];
