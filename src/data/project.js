@@ -26,7 +26,7 @@ export const projectsData = [
     live: "https://atifsimsek.github.io/react-redux-firebase-ecommerce/",
   },
   {
-    title: "Library",
+    title: "Library Google Books Api",
     image: img12,
     github:
       "https://github.com/atifsimsek/patika.dev-react/tree/main/06-react-task-6",
