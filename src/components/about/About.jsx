@@ -1,5 +1,5 @@
 import "./about.css";
-import img1 from "assets/mohammad-rahmani-N5bT5RctFZ8-unsplash.jpg";
+import img1 from "assets/about-img.jpeg";
 import { FaAward } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { VscFolderLibrary } from "react-icons/vsc";
