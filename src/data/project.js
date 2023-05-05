@@ -2,7 +2,7 @@ import img1 from "assets/Projects İmages/getir.jpeg";
 import img2 from "assets/Projects İmages/erdem-yuksel.jpeg";
 import img3 from "assets/Projects İmages/barber.jpeg";
 import img4 from "assets/Projects İmages/spotify.jpeg";
-import img5 from "assets/Projects İmages/brand-colors.png";
+import img5 from "assets/Projects İmages/brandcolors.jpeg";
 import img6 from "assets/Projects İmages/pokedex.png";
 import img7 from "assets/Projects İmages/ecommerce.png";
 import img8 from "assets/Projects İmages/todo-app.png";
