@@ -8,6 +8,7 @@ import img7 from "assets/Projects İmages/ecommerce.png";
 import img8 from "assets/Projects İmages/todo-app.png";
 import img9 from "assets/Projects İmages/youtube-clone.jpeg";
 import img10 from "assets/Projects İmages/movie-app.jpeg";
+import img11 from "assets/Projects İmages/weather-app.jpeg";
 import img12 from "assets/Projects İmages/library.jpeg";
 import img13 from "assets/Projects İmages/star-wars.jpeg";
 
