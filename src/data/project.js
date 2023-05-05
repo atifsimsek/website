@@ -88,23 +88,4 @@ export const projectsData = [
     github: "https://github.com/atifsimsek/vanilla-js-pokemon-api-pokedex",
     live: "https://atifsimsek.github.io/vanilla-js-pokemon-api-pokedex/",
   },
-  {
-    title: "BrandColors React-Tailwind Clone (Mobil Desteklemiyor)",
-    titleEng: "BrandColors React-Tailwind Clone (Mobile Not Supported)",
-    image: img5,
-    github: "https://github.com/atifsimsek/react-brandcolors-projects",
-    live: "https://atifsimsek.github.io/react-brandcolors-projects/",
-  },
-  {
-    title: "React Redux Todo App",
-    image: img8,
-    github: "https://github.com/atifsimsek/react-redux-thunk-todo-app",
-    live: "https://react-redux-thunk-todo.netlify.app/",
-  },
-  {
-    title: "Vanilla Js Pokemon Api Pokedex",
-    image: img6,
-    github: "https://github.com/atifsimsek/vanilla-js-pokemon-api-pokedex",
-    live: "https://atifsimsek.github.io/vanilla-js-pokemon-api-pokedex/",
-  },
 ];
