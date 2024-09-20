@@ -1,0 +1,142 @@
+{
+  "HEADER": {
+    "cv": "Dowland CV",
+    "contactButton": "Contact Me",
+    "greeting": "Hello I'm",
+    "profession": "Frontend Developer",
+    "scrollDown": "Scroll Down"
+  },
+  
+  "ABOUT": {
+    "title": "About Me",
+    "subtitle": "Get to Know",
+    "firstCardTitle": "Experience",
+    "firstCardDesc": "2+ year of active coding experience",
+    "secondCardTitle": "Certificates",
+    "secondCardDesc": "10+ Certificates in the front-end field",
+    "thirdCardTitle": "Work Experience",
+    "thirdCardDesc": "1.5 year professional experience",
+    "aboutMeDesc1": "I was born in 1995 in Sinop. After completing my master's degree and military service, I started focusing on software development, a field I've been passionate about since childhood and believe will shape the future.",
+    "aboutMeDesc2": "More than two years, I have been improving my skills in front-end development. I have experience with HTML, CSS, JavaScript, React, Next.js, Redux, TypeScript, REST API, Tailwind CSS, Material UI, Ant Design, and Dev Extreme. I have worked on projects like the BSH Milkrun Project and the COSMOS Modernization Project under NTT DATA Business Solutions, and I am currently a Frontend Developer on a project supporting Environmental, Social, and Governance (ESG) initiatives.",
+    "aboutMeDesc3": "You can check out the details of the projects I’ve worked on in the Experience section below. I also share the projects I develop to improve my skills on GitHub, and you can check out some of them in the Projects section below.",
+    "contactButton": "Contact Me"
+  },
+  "SKILLS": {
+    "title": "What Are My Skills",
+    "subtitle": "Skills",
+    "frontendDevelopment": "Frontend Development",
+    "otherTools": "Other Tools I Use",
+    "language": "Language",
+    "english": "English (B1)"
+  },
+  "EXPERIENCE":{
+    "title":"Projects I Have Worked On",
+    "subtitle":"My Experience",
+    "projects":{
+      "nttData1":"BSH Milkrun Project",
+      "nttData2":"COSMOS Modernization Project",
+      "nttData3":"BTS ESG Project"
+    },
+    "projectDesc":{
+      "nttData1":{
+        "desc1":"The Logistics project mainly focuses on order management, GPS tracking and a notification system.",
+        "desc2":"Developed a web application for managing and tracking logistics, improving operational efficiency for the company.",
+        "desc3":"Engaged in business requirements analysis to ensure the project met company objectives and user expectations.",
+        "desc4":"Technologies utilized include React JS, JavaScript, HTML, CSS, Dev Extreme, and Bootstrap"
+      },
+      "nttData2":{
+        "desc1":"The Modernization project is dedicated to updating a global application for our client, with a particular focus on managing the technical service processes for home appliances.",
+        "desc2":"Backend API integrations were implemented within the project, and user interfaces were designed to enhance functionality and improve the user experience.",
+        "desc3":"Technologies utilized include HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, and Dev Extreme."
+      },
+      "nttData3":{
+        "desc1":"As a frontend developer at BTS ESG, I contributed to a web application that focuses on environmental, social, and governance (ESG) aspects",
+        "desc2":"The project involves form creation, submission handling, and response collection.",
+        "desc3":"Technologies utilized include HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, and Dev Extreme"
+      }
+    }
+    
+  },
+  "PROJECTS": {
+    "title": "Projects",
+    "intro": "Some of the Work I Have Done",
+    "loadMore": "Load more",
+    "showLess": "Show less",
+    "viewDemo": "Click for Overview",
+    "projectsList": {
+      "starWarsApi": "Star Wars Api",
+      "posProject": "Fullstack POS Project",
+      "ecommerceReactFirebase": "Ecommerce React-Firebase Website",
+      "libraryGoogleBooks": "Nextjs Library App Google Books Api",
+      "youtubeClone": "TypeScript React Youtube Clone",
+      "movieApp": "Nextjs Movie App",
+      "weatherApp": "Weather App Context API",
+      "getirClone": "Getir.com React-Tailwind Clone",
+      "erdemYuksel": "Erdem Yüksel Metal React Website",
+      "barberWebsite": "HTML-CSS-JS Barber Website",
+      "spotifyClone": "Spotify React-Tailwind Clone (Mobile Not Supported)",
+      "brandColorsClone": "BrandColors React-Tailwind Clone (Mobile Not Supported)",
+      "todoApp": "React Redux Todo App",
+      "pokedex": "Vanilla Js Pokemon Api Pokedex"
+    }
+  },
+  "EDUCATION": {
+      "title": "Education and Certificates",
+      "subtitle": "My Education",
+      "loadMore": "Load More",
+      "sections": {
+        "technicalCertificates": "Frontend Development Certifications",
+        "schoolLife": "School Life",
+        "softSkill": "Soft Skills Certificates"
+      },
+      "items": {
+        "webProgramming101": "Web Programming-101",
+        "webProgramming201": "Web Programming-201",
+        "webProgramming301": "Web Programming-301",
+        "reactCourses": "React 101-201-301-401",
+        "sinopHighSchool": "Sinop Anatolian High School 2009-2013",
+        "sakaryaTourism": "Sakarya University Faculty of Business Administration / Tourism Management Bachelor 2014-2018",
+        "sakaryaMasters": "Sakarya University Information Systems Master's Degree 2018-2019",
+        "anadoluAssociate": "Anadolu University Computer Programming Associate Degree 2021-2022",
+        "modernWebDevelopment": "Modern Web Development Course: From Scratch to the Heights of the Industry",
+        "reactContextAPI": "React and Context API from Scratch",
+        "completeWebDevelopment": "Developing Complete Web Applications"
+      },
+      "certificates":{
+        "patikaFrontend": "Patika.dev Frontend Web Development",
+        "juniorNtt":"Junior Growth Program",
+        "turkcellReact":"Turkcell Future Writers React 401",
+        "projectManagement":"Project Management",
+        "innovation":"Innovation",
+        "consultantBasics": "Consultant Basics",
+        "One-on-One Mentorship Program": "One on One Mentorship Program",
+        "agile&Scrum": "Agile Project Management and Scrum Methodology"
+      }
+    },
+      "CONTACT": {
+        "title": "Contact Me",
+        "subtitle": "Get In Touch",
+        "phone": "Mobile Number",
+        "clickToCall": "Click For Call",
+        "email": "Email",
+        "sendEmail": "Send a Email",
+        "whatsapp": "WhatsApp",
+        "sendMessage": "Send a Message",
+        "form": {
+          "name": "Your Full Name",
+          "email": "Your Email",
+          "message": "Your Message",
+          "submit": "Send a Email",
+          "successMessage": "The message has been sent"
+        }
+      },
+      "FOOTER": {
+          "home": "HomePage",
+          "about": "About",
+          "skills": "Skills",
+          "experience": "Experience",
+          "education": "Education and Certificates",
+          "projects": "Projects",
+          "contact": "Contact"
+      }
+}

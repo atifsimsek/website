@@ -1,15 +1,16 @@
 import "./project.css";
 import React from "react";
-import { useSelector } from "react-redux";
-const Project = ({ title, titleEng, img, github, live }) => {
-  const { language } = useSelector((state) => state.languageReducer);
+import { useTranslation } from "react-i18next";
+
+const Project = ({ id, img, github, live }) => {
+  const { t } = useTranslation();
 
   return (
     <article className="portfolio-item">
       <div className="portfolio-item-image">
-        <img src={img} alt="" />
+        <img src={img} alt={t(`PROJECTS.projectsList.${id}`)} />
       </div>
-      <h3>{language === "en" ? titleEng || title : title}</h3>
+      <h3>{t(`PROJECTS.projectsList.${id}`)}</h3>
       <div className="portfolio-item-cta">
         <a className="btn" target="_blank" rel="noreferrer" href={github}>
           Github{" "}
@@ -20,7 +21,7 @@ const Project = ({ title, titleEng, img, github, live }) => {
           rel="noreferrer"
           href={live}
         >
-          Demo İçin Tıklayın{" "}
+          {t("PROJECTS.viewDemo")}
         </a>
       </div>
     </article>

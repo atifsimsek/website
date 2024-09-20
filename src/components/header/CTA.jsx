@@ -1,31 +1,27 @@
-import Cv from "assets/Atıf Şimşek Cv Tr.pdf";
-import CvEng from "assets/Atıf Şimşek Cv Eng.pdf";
-import { useSelector } from "react-redux";
+import CvTr from "assets/CV-Atif-Simsek-TR.pdf";
+import CvEn from "assets/CV-Atif-Simsek-EN.pdf";
+import { useTranslation } from "react-i18next";
 
 const CTA = () => {
-  const { language } = useSelector((state) => state.languageReducer);
+  const { t } = useTranslation();
+
+  const { i18n } = useTranslation();
+
   return (
-    <>
-      {language === "tr" ? (
-        <div className="cta">
-          <a className="btn" href={Cv} download="Atıf Şimşek Cv Tr">
-            Cv İndir
-          </a>
-          <a className="btn btn-primary" href="#contact">
-            İletişime Geç
-          </a>
-        </div>
-      ) : (
-        <div className="cta">
-          <a className="btn" href={CvEng} download="Atıf Şimşek Cv Eng">
-            Downland Cv
-          </a>
-          <a className="btn btn-primary" href="#contact">
-            Contact With Me
-          </a>
-        </div>
-      )}
-    </>
+    <div className="cta">
+      <a
+        className="btn"
+        href={i18n?.language === "tr" ? CvTr : CvEn}
+        download={
+          i18n?.language === "tr" ? "CV-Atif-Simsek-TR" : "CV-Atif-Simsek-EN"
+        }
+      >
+        {t("HEADER.cv")}
+      </a>
+      <a className="btn btn-primary" href="#contact">
+        {t("HEADER.contactButton")}
+      </a>
+    </div>
   );
 };
 

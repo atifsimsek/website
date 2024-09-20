@@ -3,33 +3,26 @@ import CTA from "./CTA";
 import ME from "assets/atifsimsek.png";
 import HeaderSocials from "./HeaderSocials";
 import LanguageButton from "./LanguageButton";
-import { useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const { language } = useSelector((state) => state.languageReducer);
-
-  useEffect(() => {
-    fetch(
-      `https://api.countapi.xyz/update/asimsek.com/${process.env.REACT_APP_KEY}?amount=1`
-    );
-  }, []);
+  const { t } = useTranslation();
 
   return (
-    <header className="no-margin" id="#">
+    <header className="no-margin" id="home">
       <div className="container header-container">
-        <h5>{language === "tr" ? "Merhaba Ben" : "Hello I'm"}</h5>
+        <h5>{t("HEADER.greeting")}</h5>
         <h1>Atıf Şimşek</h1>
-        <h5 className="text-light">Frontend Developer</h5>
+        <h5 className="text-light">{t("HEADER.profession")}</h5>
         <CTA />
         <HeaderSocials />
 
         <div className="me">
-          <img src={ME} alt="me" />
+          <img src={ME} alt="Atıf Şimşek" />
         </div>
 
         <a href="#contact" className="scroll-down">
-          {language === "tr" ? "Aşağı Kaydır" : "Scroll Down"}
+          {t("HEADER.scrollDown")}
         </a>
       </div>
       <LanguageButton />

@@ -4,56 +4,101 @@ import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
-import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
-  const { language } = useSelector((state) => state.languageReducer);
+  const { t } = useTranslation();
+
+  const scrollToSection = (sectionId) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer>
-      {language === "tr" ? (
-        <ul className="permalinks">
-          <li>
-            <a href="#">Anasayfa</a>
-          </li>
-          <li>
-            <a href="#about">Hakkımda</a>
-          </li>
-          <li>
-            <a href="#experience">Yeteneklerim</a>
-          </li>
-          <li>
-            <a href="#services">Eğitim ve Sertifikalar</a>
-          </li>
-          <li>
-            <a href="#portfolio">Projeler</a>
-          </li>
+      <ul className="permalinks">
+        <li>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#home");
+            }}
+            href="#home"
+          >
+            {t("FOOTER.home")}
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
 
-          <li>
-            <a href="#contact">İletişim</a>
-          </li>
-        </ul>
-      ) : (
-        <ul className="permalinks">
-          <li>
-            <a href="#">HomePage</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Skills</a>
-          </li>
-          <li>
-            <a href="#services">Education and Certificates</a>
-          </li>
-          <li>
-            <a href="#portfolio">Projects</a>
-          </li>
+              scrollToSection("#about");
+            }}
+            href="#about"
+          >
+            {t("FOOTER.about")}
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#skills");
+            }}
+            href="#skills"
+          >
+            {t("FOOTER.skills")}
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#experience");
+            }}
+            href="#experience"
+          >
+            {t("FOOTER.experience")}
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#portfolio");
+            }}
+            href="#portfolio"
+          >
+            {t("FOOTER.projects")}
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#education");
+            }}
+            href="#education"
+          >
+            {t("FOOTER.education")}
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#contact");
+            }}
+            href="#contact"
+          >
+            {t("FOOTER.contact")}
+          </a>
+        </li>
+      </ul>
 
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      )}
       <div className="footer-socials">
         <a
           href="https://github.com/atifsimsek"
@@ -84,6 +129,7 @@ const Footer = () => {
           <IoLogoTwitter />
         </a>
       </div>
+
       <div className="footer-copyright">
         <small>&copy; Atıf Şimşek</small>
       </div>

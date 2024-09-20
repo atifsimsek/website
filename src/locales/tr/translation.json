@@ -1,0 +1,141 @@
+{
+  "HEADER": {
+    "cv": "CV İndir",
+    "contactButton": "İletişime Geç",
+    "greeting": "Merhaba Ben",
+    "profession": "Frontend Developer",
+    "scrollDown": "Aşağı Kaydır"
+  },
+  "ABOUT": {
+    "title": "Hakkımda",
+    "subtitle": "Beni Tanıyın",
+    "firstCardTitle": "Deneyim",
+    "firstCardDesc": "2+ yıl aktif kodlama deneyimi",
+    "secondCardTitle": "Sertifikalar",
+    "secondCardDesc": "Front-End alanında 10+ sertifika",
+    "thirdCardTitle": "İş Deneyimi",
+    "thirdCardDesc": "1.5 yıl profesyonel deneyim",
+    "aboutMeDesc1": "1995 Sinop doğumluyum, yüksek lisans eğitimimi ve askerlik görevimi tamamladıktan sonra çocukluğumdan beri ilgi duyduğum ve dünyanın geleceğine yön vereceğini düşündüğüm yazılım alanında kendimi geliştirmeye başladım.",
+    "aboutMeDesc2": "Yaklaşık iki yıldan fazla süredir front-end alanında kendimi geliştiriyorum. HTML, CSS, JavaScript, React, Next.js, Redux, TypeScript, REST API, Tailwind CSS, Material UI, Ant Design ve Dev Extreme gibi teknolojilerde deneyim sahibiyim. NTT DATA Business Solutions bünyesin altında BSH Milkrun Project, COSMOS Modernization Project gibi projelerde görev aldım ve şuan da devam eden Çevresel, Sosyal ve Yönetişim (ESG) girişimlerini destekleyen bir projede Frontend Developer olarak görev almaktayım.",
+    "aboutMeDesc3": "Görev aldığım proje detaylarını aşağıdaki Deneyimlerim kısmından inceleyebilirsiniz ayrıca kendimi geliştirmek için yaptığım projeleri GitHub hesabımda paylaşmaktayım. Bazı projelerimi de aşağıdaki projelerim kısmından inceleyebilirsiniz.",
+    "contactButton": "İletişime Geç"
+  },
+  "SKILLS": {
+    "title":"Hangi Yeteneklere Sahibim",
+    "subtitle":"Yeteneklerim",
+    "frontendDevelopment": "Frontend Geliştiriciliği",
+    "otherTools": "Kullandığım Diğer Araçlar",
+    "language": "Yabancı Dil",
+    "english": "İngilizce (B1)"
+  },
+  "EXPERIENCE":{
+    "title":"Çalıştığım Projeler",
+    "subtitle":"Deneyimlerim",
+    "projects":{
+      "nttData1":"BSH Milkrun Project",
+      "nttData2":"COSMOS Modernization Project",
+      "nttData3":"BTS ESG Project"
+    },
+    "projectDesc":{
+      "nttData1":{
+        "desc1":"Milkrun Lojistik projesi sipariş yönetimi, GPS takibi ve bildirim sistemi üzerine odaklanmaktadır.",
+        "desc2":"Şirketin operasyonel verimliliğini artıran, lojistik yönetimi ve takibi için bir web uygulaması geliştirildi.",
+        "desc3":"Projenin şirket hedeflerini ve kullanıcı beklentilerini karşıladığından emin olmak için iş gereksinimlerinin analizine katılım sağlandı.",
+        "desc4":"Proje içerisinde  React JS, JavaScript, HTML, CSS, Dev Extreme ve Bootstrap gibi teknolojileri kullandım."
+      },
+      "nttData2":{
+        "desc1":"Cosmos Modernizasyon projesi, ev aletleri için teknik servis süreçlerini yönetmeye odaklanan küresel bir uygulamanın güncellenme projesidir.",
+        "desc2":"Proje içerisinde backend API entegrasyonları yapıldı ve işlevselliği ile kullanıcı deneyimini geliştirmek amacıyla kullanıcı arayüzleri tasarlandı.",
+        "desc3":"Proje içerisinde HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, ve Dev Extreme gibi teknolojileri kullandım."
+      },
+      "nttData3":{
+        "desc1":"BTS ESG'de frontend geliştirici olarak, çevresel, sosyal ve yönetişim (ESG) unsurlarına odaklanan bir web uygulamasına katkıda bulundum.",
+        "desc2":"Proje, form oluşturma, gönderim işlemleri ve yanıt toplama süreçlerini içermektedir.",
+        "desc3":"Proje içerisinde HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, ve Dev Extreme gibi teknolojileri kullandım."
+      }
+    }
+  },
+  "PROJECTS": {
+    "title": "Projelerim",
+    "intro": "Yaptığım Bazı Çalışmalar",
+    "loadMore": "Daha fazla yükle",
+    "showLess": "Daha az göster",
+    "viewDemo": "İncelemek İçin Tıklayın",
+    "projectsList": {
+      "starWarsApi": "Star Wars Api",
+      "posProject": "Fullstack POS Projesi",
+      "ecommerceReactFirebase": "E-ticaret React-Firebase Websitesi",
+      "libraryGoogleBooks": "Nextjs Kütüphane projesi Google Books Api",
+      "youtubeClone": "TypeScript React Youtube Klon",
+      "movieApp": "Nextjs Film Uygulaması",
+      "weatherApp": "Hava Durumu Uygulaması Context API",
+      "getirClone": "Getir.com React-Tailwind Klon",
+      "erdemYuksel": "Erdem Yüksel Metal React Websitesi",
+      "barberWebsite": "HTML-CSS-JS Berber Websitesi",
+      "spotifyClone": "Spotify React-Tailwind Klon (Mobil Desteklemiyor)",
+      "brandColorsClone": "BrandColors React-Tailwind Klon (Mobil Desteklemiyor)",
+      "todoApp": "React Redux Yapılacaklar Uygulaması",
+      "pokedex": "Vanilla Js Pokemon Api Pokedex"
+    }
+  },
+  "EDUCATION": {
+    "title": "Eğitim ve Sertifikalar",
+    "subtitle": "Eğitim Hayatım",
+    "loadMore": "Daha fazla yükle",
+    "showLess": "Daha az göster",
+    "sections": {
+      "technicalCertificates": "Frontend Geliştirme Sertifikaları",
+      "schoolLife": "Okul Hayatı",
+      "softSkill": "Kişisel Gelişim"
+    },
+    "items": {
+
+      "webProgramming301": "Web Programming-101-201-301",
+      "reactCourses": "React 101-201-301-401",
+      "sinopHighSchool": "Sinop Anadolu Lisesi 2009-2013",
+      "sakaryaTourism": "Sakarya Üniversitesi İşletme Fakültesi/Turizm İşletmeciliği Lisans 2014-2018",
+      "sakaryaMasters": "Sakarya Üniversitesi Bilişim Sistemleri Yüksek Lisans 2018-2019",
+      "anadoluAssociate": "Anadolu Üniversitesi Bilgisayar Programcılığı Ön Lisans 2021-2022",
+      "modernWebDevelopment": "Modern Web Geliştirme Kursu Sıfırdan Sektörün Yükseklerine",
+      "reactContextAPI": "Sıfırdan React ve Context Api",
+      "completeWebDevelopment": "Komple Web Uygulamaları Geliştirme"
+    },
+    "certificates":{
+      "patikaFrontend": "Patika.dev Frontend Web Geliştiriciliği",
+      "juniorNtt":"Junior Gelişim Programı",
+      "turkcellReact":"Turkcell Geleceği Yazanlar React 401",
+      "projectManagement":"Proje Yönetimi",
+      "innovation":"İnovasyon",
+      "consultantBasics":"Danışmanlık Temelleri",
+      "One-on-One Mentorship Program": "One on One Mentorluk Programı",
+      "agile&Scrum": "Agile Proje Yönetimi ve Scrum Metodolojisi"
+    }
+    
+  },
+    "CONTACT": {
+      "title": "İletişim",
+      "subtitle": "Bağlantı Kurun",
+      "phone": "Telefon",
+      "clickToCall": "Aramak İçin Tıklayın",
+      "email": "Email",
+      "sendEmail": "Email Gönderin",
+      "whatsapp": "WhatsApp",
+      "sendMessage": "Mesaj Gönderin",
+      "form": {
+        "name": "Adınız Soyadınız",
+        "email": "Email Adresiniz",
+        "message": "Mesajınız",
+        "submit": "Email Gönder",
+        "successMessage": "Mesajınız Gönderildi"
+      }
+    },
+    "FOOTER": {
+        "home": "Anasayfa",
+        "about": "Hakkımda",
+        "skills": "Yeteneklerim",
+        "experience": "Deneyimlerim",
+        "education": "Eğitim ve Sertifikalar",
+        "projects": "Projeler",
+        "contact": "İletişim"
+    }
+}

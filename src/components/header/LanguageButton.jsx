@@ -1,16 +1,26 @@
+import React, { useState, useEffect } from "react";
 import "./header.css";
-import { useDispatch, useSelector } from "react-redux";
-import { changeLanguage } from "redux/languageSlice";
+import { useTranslation } from "react-i18next";
+
 const LanguageButton = () => {
-  const dispatch = useDispatch();
-  const { language } = useSelector((state) => state.languageReducer);
+  const { i18n } = useTranslation();
+  const [checked, setChecked] = useState(i18n.language === "en");
+
+  useEffect(() => {
+    setChecked(i18n.language === "en");
+  }, [i18n.language]);
 
   const toggleLanguage = () => {
-    if (language === "tr") {
-      dispatch(changeLanguage("en"));
+    if (i18n.language === "tr") {
+      i18n.changeLanguage("en");
     } else {
-      dispatch(changeLanguage("tr"));
+      i18n.changeLanguage("tr");
     }
+  };
+
+  const handleToggle = () => {
+    toggleLanguage();
+    setChecked(!checked);
   };
 
   return (
@@ -20,8 +30,10 @@ const LanguageButton = () => {
           id="language-toggle"
           className="check-toggle check-toggle-round-flat"
           type="checkbox"
+          checked={checked}
+          onChange={handleToggle}
         />
-        <label onClick={toggleLanguage} htmlFor="language-toggle"></label>
+        <label htmlFor="language-toggle"></label>
         <span className="on">Tr</span>
         <span className="off">EN</span>
       </div>

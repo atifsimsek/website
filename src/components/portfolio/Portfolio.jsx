@@ -1,12 +1,11 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import "./portfolio.css";
-import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Project from "components/project/Project";
 import { projectsData } from "data/project";
 
 const Portfolio = () => {
-  const { language } = useSelector((state) => state.languageReducer);
+  const { t } = useTranslation();
   const [projects, setProjects] = useState(projectsData.slice(0, 6));
   const [showMore, setShowMore] = useState(true);
 
@@ -31,19 +30,14 @@ const Portfolio = () => {
   return (
     <>
       <section id="portfolio">
-        <h5>
-          {language === "tr"
-            ? "Yaptığım Bazı Çalışmalar"
-            : "Some of the Work I Have Done"}
-        </h5>
-        <h2>{language === "tr" ? "Projelerim" : "Projects"}</h2>
+        <h5>{t("PROJECTS.intro")}</h5>
+        <h2>{t("PROJECTS.title")}</h2>
 
         <div className="container portfolio-container">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <Project
-              key={index}
-              title={project.title}
-              titleEng={project.titleEng}
+              key={project.id}
+              id={project.id}
               img={project.image}
               github={project.github}
               live={project.live}
@@ -51,12 +45,12 @@ const Portfolio = () => {
           ))}
           {showMore && projects.length < projectsData.length && (
             <button className="btn btn-primary more" onClick={handleLoadMore}>
-              {language === "tr" ? "Daha fazla yükle" : "Load more"}
+              {t("PROJECTS.loadMore")}
             </button>
           )}
           {!showMore && (
             <button className="btn btn-primary more" onClick={handleShowLess}>
-              {language === "tr" ? "Daha az göster" : "Show less"}
+              {t("PROJECTS.showLess")}
               <a className="btnLink" href="#portfolio" />
             </button>
           )}

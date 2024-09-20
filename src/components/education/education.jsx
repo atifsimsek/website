@@ -1,192 +1,164 @@
 import "./education.css";
 import { BiCheck } from "react-icons/bi";
-import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import { cercificatesData } from "data/certificates";
+
 const Education = () => {
-  const { language } = useSelector((state) => state.languageReducer);
+  const { t } = useTranslation();
+
+  const numItemsToShow = 6;
+  const [shownCertificates, setShownCertificates] = useState([]); // Başlangıçta 0 eleman gösteriliyor
+  const [showMore, setShowMore] = useState(true);
+
+  const handleLoadMore = () => {
+    const currentNumItems = shownCertificates.length;
+    const nextNumItems = currentNumItems + numItemsToShow;
+    const newCertificates = cercificatesData.slice(0, nextNumItems);
+    setShownCertificates(newCertificates);
+
+    if (newCertificates.length === cercificatesData.length) {
+      setShowMore(false); // Tüm elemanlar yüklendiyse "Daha fazla göster" butonunu gizle
+    }
+  };
+
+  const handleShowLess = () => {
+    setShownCertificates([]); // Gösterilen elemanları tekrar sıfırlıyoruz
+    setShowMore(true);
+  };
+
   return (
-    <>
-      {language === "tr" ? (
-        <section id="education">
-          <h5>Eğitim Hayatım</h5>
-          <h2>Eğitim ve Sertifikalar</h2>
+    <section id="education">
+      <h5>{t("EDUCATION.title")}</h5>
+      <h2>{t("EDUCATION.subtitle")}</h2>
 
-          <div className="container education_container">
-            {/* ARTİCLE 1  */}
-            <article className="education">
-              <div className="education_head">
-                <h3>Turkcell Eğitim Sertifikaları</h3>
-              </div>
-              <ul className="education_list">
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Web Programming-101</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Web Programming-201</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Web Programming-301</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>React 101-201-301-401</p>
-                </li>
-              </ul>
-            </article>
-
-            {/* ARTİCLE 2  */}
-
-            <article className="education">
-              <div className="education_head">
-                <h3>Okul Hayatı</h3>
-              </div>
-              <ul className="education_list">
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Sinop Anadolu Lisesi 2009-2013</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Sakarya Üniversitesi İşletme Fakültesi/Turizm İşletmeciliği
-                    Lisans 2014-2018{" "}
-                  </p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Sakarya Üniversitesi Bilişim Sistemleri Yüksek Lisans
-                    2018-2019
-                  </p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Anadolu Üniversitesi Bilgisayar Programcılığı Ön Lisans
-                    2021-Devam Ediyor
-                  </p>
-                </li>
-              </ul>
-            </article>
-
-            {/* ARTİCLE 3 */}
-            <article className="education">
-              <div className="education_head">
-                <h3>Udemy Sertifikaları</h3>
-              </div>
-              <ul className="education_list">
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Modern Web Geliştirme Kursu Sıfırdan Sektörün Yükseklerine
-                  </p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Sıfırdan React ve Content Api</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Komple Web Uygulamaları Geliştirme</p>
-                </li>
-              </ul>
-            </article>
+      <div className="container education_container">
+        {/* ARTİCLE 1  */}
+        <article className="education ">
+          <div className="education_head">
+            <h3>{t("EDUCATION.sections.technicalCertificates")}</h3>
           </div>
-        </section>
-      ) : (
-        <section id="education">
-          <h5>My Education</h5>
-          <h2>Education and Certificates</h2>
+          <ul className="education_list">
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("FMSS Front-End Practicum")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.certificates.patikaFrontend")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>NTT DATA {t("EDUCATION.certificates.projectManagement")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.modernWebDevelopment")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.reactContextAPI")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.completeWebDevelopment")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.reactCourses")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.webProgramming301")}</p>
+            </li>
+          </ul>
+        </article>
 
-          <div className="container education_container">
-            {/* ARTİCLE 1  */}
-            <article className="education education-special">
-              <div className="education_head">
-                <h3>Turkcell Education Certificate</h3>
-              </div>
-              <ul className="education_list">
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Web Programming-101</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Web Programming-201</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Web Programming-301</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>React 101-201-301-401</p>
-                </li>
-              </ul>
-            </article>
-
-            {/* ARTİCLE 2  */}
-
-            <article className="education">
-              <div className="education_head">
-                <h3>School Life</h3>
-              </div>
-              <ul className="education_list">
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Sinop Anatolian High School 2009-2013</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Sakarya University Faculty of Business Administration /
-                    Tourism Management Bachelor 2014-2018{" "}
-                  </p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Sakarya University Information Systems Master's Degree
-                    2018-2019
-                  </p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Anadolu University Computer Programming Associate Degree
-                    2021-Continuing
-                  </p>
-                </li>
-              </ul>
-            </article>
-            {/* ARTİCLE 3 */}
-            <article className="education education-special">
-              <div className="education_head">
-                <h3>Udemy Certificates</h3>
-              </div>
-              <ul className="education_list">
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>
-                    Modern Web Development Course: From Scratch to the Heights
-                    of the Industry
-                  </p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>React and Context API from Scratch</p>
-                </li>
-                <li>
-                  <BiCheck className="education_list-icon" />
-                  <p>Developing Complete Web Applications</p>
-                </li>
-              </ul>
-            </article>
+        {/* ARTİCLE 2 */}
+        <article className="education">
+          <div className="education_head">
+            <h3>{t("EDUCATION.sections.schoolLife")}</h3>
           </div>
-        </section>
-      )}
-    </>
+          <ul className="education_list">
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.sinopHighSchool")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.sakaryaTourism")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.sakaryaMasters")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.items.anadoluAssociate")}</p>
+            </li>
+          </ul>
+        </article>
+
+        {/* ARTİCLE 3 */}
+        <article className="education ">
+          <div className="education_head">
+            <h3>{t("EDUCATION.sections.softSkill")}</h3>
+          </div>
+          <ul className="education_list">
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EDUCATION.certificates.agile&Scrum")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>NTT DATA {t("EDUCATION.certificates.juniorNtt")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>NTT DATA {t("EDUCATION.certificates.innovation")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>NTT DATA {t("EDUCATION.certificates.consultantBasics")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>NTT DATA {t("QA")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>
+                NTT DATA{" "}
+                {t("EDUCATION.certificates.One-on-One Mentorship Program")}
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        {shownCertificates.map((certificate, index) => (
+          <article className="education" key={index}>
+            <div className="education_head">
+              <h3>{t(certificate.name)}</h3>
+            </div>
+            <div className="education_list">
+              <img src={certificate.image} alt={t(certificate.name)} />
+            </div>
+          </article>
+        ))}
+
+        {showMore && shownCertificates.length < cercificatesData.length && (
+          <button className="btn btn-primary more" onClick={handleLoadMore}>
+            {t("EDUCATION.loadMore")}
+          </button>
+        )}
+        {!showMore && (
+          <button className="btn btn-primary more" onClick={handleShowLess}>
+            {t("EDUCATION.showLess")}
+            <a className="btnLink" href="#education" />
+          </button>
+        )}
+      </div>
+    </section>
   );
 };
 

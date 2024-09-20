@@ -1,0 +1,133 @@
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.experience-container > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.experience-container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.experience-container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.experience-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+.content-language {
+  grid-column: 1 / span 2;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-details .title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title h4 {
+  margin-top: 0.3rem;
+}
+
+.experience-details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+}
+
+.progress-container {
+  margin-top: 0.625rem;
+  width: 160px;
+  background-color: rgba(253, 253, 253, 0.758);
+  height: 22px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: all 1000ms ease;
+}
+
+.progress {
+  transition: all 500ms ease;
+  position: absolute;
+  inset: 0;
+  font-size: small;
+  width: 50%;
+  height: 22px;
+  border-radius: 5px 0px 0px 5px;
+  background: linear-gradient(
+    var(--color-primary-variant),
+    var(--color-primary)
+  );
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.progress span {
+  margin-left: 0.5rem;
+  color: var(--color-white);
+  padding-left: 0.7rem;
+  font-weight: bolder;
+}
+
+.deneme {
+  letter-spacing: -1.2px;
+}
+
+/* ****** MEDİUM DEVİCES ****** */
+
+@media screen and (max-width: 1024px) {
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .experience-content {
+    padding: 1rem;
+  }
+}
+
+/* ****** SMALL DEVİCES ****** */
+
+@media screen and (max-width: 600px) {
+  .experience-container {
+    gap: 1rem;
+  }
+
+  .experience-container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .progress-container {
+    width: 120px;
+  }
+
+  .vs {
+    letter-spacing: -1.2px;
+  }
+}
