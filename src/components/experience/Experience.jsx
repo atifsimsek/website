@@ -1,31 +1,9 @@
 import "./experience.css";
 import { BiCheck } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
-import { cercificatesData } from "data/certificates";
 
 const Experience = () => {
   const { t } = useTranslation();
-
-  const numItemsToShow = 6;
-  const [shownCertificates, setShownCertificates] = useState([]); // Başlangıçta 0 eleman gösteriliyor
-  const [showMore, setShowMore] = useState(true);
-
-  const handleLoadMore = () => {
-    const currentNumItems = shownCertificates.length;
-    const nextNumItems = currentNumItems + numItemsToShow;
-    const newCertificates = cercificatesData.slice(0, nextNumItems);
-    setShownCertificates(newCertificates);
-
-    if (newCertificates.length === cercificatesData.length) {
-      setShowMore(false); // Tüm elemanlar yüklendiyse "Daha fazla göster" butonunu gizle
-    }
-  };
-
-  const handleShowLess = () => {
-    setShownCertificates([]); // Gösterilen elemanları tekrar sıfırlıyoruz
-    setShowMore(true);
-  };
 
   return (
     <section id="experience">

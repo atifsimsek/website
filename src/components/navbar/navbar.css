@@ -28,11 +28,31 @@ nav a:hover {
 }
 
 nav a.active {
-  background: var(--color-primary);
+  background: var(--color-primary) !important;
   color: var(--color-bg);
 }
 
 /* ****** MEDİUM DEVİCES ****** */
 
 @media screen and (max-width: 1024px) {
+}
+
+/* ****** SMALL DEVİCES ****** */
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0.7rem 0.65rem;
+    gap: 0.25rem;
+  }
+  nav a {
+    padding: 0.8rem;
+  }
+}
+
+/* ****** TOUCH DEVİCES ****** */
+
+@media (pointer: coarse) {
+  nav a:hover {
+    background: none;
+  }
 }

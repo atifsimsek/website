@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import "./education.css";
 import { BiCheck } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
