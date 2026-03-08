@@ -10,48 +10,84 @@
     "title": "Hakkımda",
     "subtitle": "Beni Tanıyın",
     "firstCardTitle": "Deneyim",
-    "firstCardDesc": "2+ yıl aktif kodlama deneyimi",
+    "firstCardDesc": "4+ yıl aktif kodlama deneyimi",
     "secondCardTitle": "Sertifikalar",
     "secondCardDesc": "Front-End alanında 10+ sertifika",
     "thirdCardTitle": "İş Deneyimi",
-    "thirdCardDesc": "1.5 yıl profesyonel deneyim",
-    "aboutMeDesc1": "1995 Sinop doğumluyum, yüksek lisans eğitimimi ve askerlik görevimi tamamladıktan sonra çocukluğumdan beri ilgi duyduğum ve dünyanın geleceğine yön vereceğini düşündüğüm yazılım alanında kendimi geliştirmeye başladım.",
-    "aboutMeDesc2": "Yaklaşık iki yıldan fazla süredir front-end alanında kendimi geliştiriyorum. HTML, CSS, JavaScript, React, Next.js, Redux, TypeScript, REST API, Tailwind CSS, Material UI, Ant Design ve Dev Extreme gibi teknolojilerde deneyim sahibiyim. NTT DATA Business Solutions bünyesin altında BSH Milkrun Project, COSMOS Modernization Project gibi projelerde görev aldım ve şuan da devam eden Çevresel, Sosyal ve Yönetişim (ESG) girişimlerini destekleyen bir projede Frontend Developer olarak görev almaktayım.",
-    "aboutMeDesc3": "Görev aldığım proje detaylarını aşağıdaki Deneyimlerim kısmından inceleyebilirsiniz ayrıca kendimi geliştirmek için yaptığım projeleri GitHub hesabımda paylaşmaktayım. Bazı projelerimi de aşağıdaki projelerim kısmından inceleyebilirsiniz.",
+    "thirdCardDesc": "3 yıl profesyonel deneyim",
+    "aboutMeDesc1": "Frontend Developer olarak React, TypeScript ve Next.js kullanarak modern ve ölçeklenebilir web arayüzleri geliştiriyorum. 3 yılı aşkın süredir frontend alanında çalışıyor ve kurumsal projelerde aktif olarak görev alıyorum.",
+    "aboutMeDesc2": "NTT DATA Business Solutions bünyesinde lojistik, sürdürülebilirlik ve operasyon yönetimi alanlarında geliştirilen projelerde yer aldım. BSH Milkrun, COSMOS Modernization, Implika ESG Platformu ve Daimler Truck için geliştirilen kurumsal uygulamalarda frontend geliştirme süreçlerinde görev aldım.",
+    "aboutMeDesc3": "Kullanıcı deneyimi, performans ve sürdürülebilir component mimarisi üzerine odaklanarak React ekosisteminde modern frontend çözümleri geliştirmeyi hedefliyorum.",
+    "aboutMeDesc4": "Projelerimi aşağıdaki deneyimler bölümünden inceleyebilir veya GitHub hesabım üzerinden geliştirdiğim uygulamalara göz atabilirsiniz.",
     "contactButton": "İletişime Geç"
   },
   "SKILLS": {
-    "title":"Hangi Yeteneklere Sahibim",
-    "subtitle":"Yeteneklerim",
-    "frontendDevelopment": "Frontend Geliştiriciliği",
-    "otherTools": "Kullandığım Diğer Araçlar",
-    "language": "Yabancı Dil",
-    "english": "İngilizce (B1)"
-  },
-  "EXPERIENCE":{
-    "title":"Çalıştığım Projeler",
-    "subtitle":"Deneyimlerim",
-    "projects":{
-      "nttData1":"BSH Milkrun Project",
-      "nttData2":"COSMOS Modernization Project",
-      "nttData3":"BTS ESG Project"
+    "title": "Hangi Yeteneklere Sahibim",
+    "subtitle": "Yeteneklerim",
+    "categories": {
+      "frontend": "Frontend",
+      "stateManagement": "State Management",
+      "dataForms": "Data & Forms",
+      "styling": "Styling",
+      "uiLibraries": "UI Libraries",
+      "tools": "Tools",
+      "other": "Other"
     },
-    "projectDesc":{
-      "nttData1":{
-        "desc1":"Milkrun Lojistik projesi sipariş yönetimi, GPS takibi ve bildirim sistemi üzerine odaklanmaktadır.",
-        "desc2":"Şirketin operasyonel verimliliğini artıran, lojistik yönetimi ve takibi için bir web uygulaması geliştirildi.",
-        "desc3":"Projenin şirket hedeflerini ve kullanıcı beklentilerini karşıladığından emin olmak için iş gereksinimlerinin analizine katılım sağlandı.",
-        "desc4":"Proje içerisinde  React JS, JavaScript, HTML, CSS, Dev Extreme ve Bootstrap gibi teknolojileri kullandım."
+    "skills": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript",
+      "redux": "Redux",
+      "reduxToolkit": "Redux Toolkit",
+      "zustand": "Zustand",
+      "contextApi": "Context API",
+      "reactQuery": "React Query",
+      "reactHookForm": "React Hook Form",
+      "restApi": "REST API",
+      "tailwind": "Tailwind CSS",
+      "scss": "SCSS / Sass",
+      "styledComponents": "Styled Components",
+      "materialUi": "Material UI",
+      "mantineUi": "Mantine UI",
+      "devExtreme": "DevExtreme",
+      "git": "Git",
+      "github": "GitHub",
+      "figma": "Figma",
+      "componentArchitecture": "Component-Based Architecture",
+      "responsiveDesign": "Responsive Design",
+      "agileScrum": "Agile & Scrum"
+    }
+  },
+  "EXPERIENCE": {
+    "title": "Çalıştığım Projeler",
+    "subtitle": "Deneyimlerim",
+    "projects": {
+      "daimlerTruck": "Mercedes-Benz / Daimler Truck – Enterprise Web Platform",
+      "implikaEsg": "Implika – ESG Değerlendirme ve Raporlama Platformu",
+      "bshMilkrun": "BSH Milkrun – Lojistik Takip Sistemi",
+      "cosmosModernization": "COSMOS Modernization Project"
+    },
+    "projectDesc": {
+      "daimlerTruck": {
+        "desc1": "Daimler Truck için geliştirilen bu kurumsal platformda çalışma saatleri takibi, raporlama ve maliyet merkezi yönetimi gibi operasyon süreçlerini kapsayan çok modüllü sistemin arayüz geliştirmelerinde görev aldım.",
+        "desc2": "Form yönetimi, veri tabloları, kullanıcı rollerine göre yetkilendirme ve raporlama ekranlarının geliştirilmesine katkı sağladım.",
+        "desc3": "Kullanılan Teknolojiler: React, TypeScript, Vite, Mantine UI, Tailwind CSS, React Query, React Hook Form, REST API"
       },
-      "nttData2":{
-        "desc1":"Cosmos Modernizasyon projesi, ev aletleri için teknik servis süreçlerini yönetmeye odaklanan küresel bir uygulamanın güncellenme projesidir.",
-        "desc2":"Proje içerisinde backend API entegrasyonları yapıldı ve işlevselliği ile kullanıcı deneyimini geliştirmek amacıyla kullanıcı arayüzleri tasarlandı.",
-        "desc3":"Proje içerisinde HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, ve Dev Extreme gibi teknolojileri kullandım."
+      "implikaEsg": {
+        "desc1": "Çevresel, sosyal ve yönetişim (ESG) süreçlerini yöneten bu web uygulamasının frontend geliştirmesinde görev aldım.",
+        "desc2": "Dinamik form yapıları, soru-cevap akışları, veri görselleştirme (chart) bileşenleri, fotoğraf yükleme ve raporlama modüllerinin geliştirilmesine katkı sağladım.",
+        "desc3": "Kullanılan Teknolojiler: React, TypeScript, Redux Toolkit, Material UI, DevExtreme, REST API"
       },
-      "nttData3":{
-        "desc1":"BTS ESG'de frontend geliştirici olarak, çevresel, sosyal ve yönetişim (ESG) unsurlarına odaklanan bir web uygulamasına katkıda bulundum.",
-        "desc2":"Proje, form oluşturma, gönderim işlemleri ve yanıt toplama süreçlerini içermektedir.",
-        "desc3":"Proje içerisinde HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, ve Dev Extreme gibi teknolojileri kullandım."
+      "bshMilkrun": {
+        "desc1": "Milkrun projesi sipariş yönetimi, GPS takibi ve bildirim sistemlerini kapsayan lojistik operasyonlarını dijitalleştiren bir web uygulamasıdır.",
+        "desc2": "Frontend tarafında rampa rezervasyonu ve servis operasyonlarına yönelik modüllerin geliştirilmesinde görev aldım.",
+        "desc3": "Kullanılan Teknolojiler: React, JavaScript, SCSS, DevExtreme, REST API"
+      },
+      "cosmosModernization": {
+        "desc1": "Çalışan ve teknik servis süreçlerini yöneten bir web uygulamasının kullanıcı arayüzünün modernizasyonunu hedefleyen bir projedir.",
+        "desc2": "API entegrasyonları gerçekleştirdim ve kullanıcı deneyimini iyileştirmek amacıyla arayüzleri yeniden yapılandırdım.",
+        "desc3": "Kullanılan Teknolojiler: HTML, CSS, TypeScript, React, Redux Toolkit, React Hook Form, Material UI ve DevExtreme"
       }
     }
   },

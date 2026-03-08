@@ -42,6 +42,7 @@ const About = () => {
           <p>{t("ABOUT.aboutMeDesc1")}</p>
           <p className="detail">{t("ABOUT.aboutMeDesc2")}</p>
           <p className="detail">{t("ABOUT.aboutMeDesc3")}</p>
+          <p className="detail">{t("ABOUT.aboutMeDesc4")}</p>
 
           <a href="#contact" className="left btn btn-primary">
             {t("ABOUT.contactButton")}

@@ -14,24 +14,20 @@ const Experience = () => {
         {/* ARTİCLE 1  */}
         <article className="education ">
           <div className="education_head">
-            <h3>{t("EXPERIENCE.projects.nttData1")}</h3>
+            <h3>{t("EXPERIENCE.projects.daimlerTruck")}</h3>
           </div>
           <ul className="education_list">
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData1.desc1")}</p>
+              <p>{t("EXPERIENCE.projectDesc.daimlerTruck.desc1")}</p>
             </li>
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData1.desc2")}</p>
+              <p>{t("EXPERIENCE.projectDesc.daimlerTruck.desc2")}</p>
             </li>
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData1.desc3")}</p>
-            </li>
-            <li>
-              <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData1.desc4")}</p>
+              <p>{t("EXPERIENCE.projectDesc.daimlerTruck.desc3")}</p>
             </li>
           </ul>
         </article>
@@ -39,41 +35,62 @@ const Experience = () => {
         {/* ARTİCLE 2 */}
         <article className="education">
           <div className="education_head">
-            <h3>{t("EXPERIENCE.projects.nttData2")}</h3>
+            <h3>{t("EXPERIENCE.projects.implikaEsg")}</h3>
           </div>
           <ul className="education_list">
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData2.desc1")}</p>
+              <p>{t("EXPERIENCE.projectDesc.implikaEsg.desc1")}</p>
             </li>
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData2.desc2")}</p>
+              <p>{t("EXPERIENCE.projectDesc.implikaEsg.desc2")}</p>
             </li>
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData2.desc3")}</p>
+              <p>{t("EXPERIENCE.projectDesc.implikaEsg.desc3")}</p>
             </li>
           </ul>
         </article>
 
         {/* ARTİCLE 3 */}
-        <article className="education ">
+        <article className="education">
           <div className="education_head">
-            <h3>{t("EXPERIENCE.projects.nttData3")}</h3>
+            <h3>{t("EXPERIENCE.projects.bshMilkrun")}</h3>
           </div>
           <ul className="education_list">
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData3.desc1")}</p>
+              <p>{t("EXPERIENCE.projectDesc.bshMilkrun.desc1")}</p>
             </li>
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData3.desc2")}</p>
+              <p>{t("EXPERIENCE.projectDesc.bshMilkrun.desc2")}</p>
             </li>
             <li>
               <BiCheck className="education_list-icon" />
-              <p>{t("EXPERIENCE.projectDesc.nttData3.desc3")}</p>
+              <p>{t("EXPERIENCE.projectDesc.bshMilkrun.desc3")}</p>
+            </li>
+          </ul>
+        </article>
+
+        {/* ARTİCLE 4 */}
+        <article className="education">
+          <div className="education_head">
+            <h3>{t("EXPERIENCE.projects.cosmosModernization")}</h3>
+          </div>
+          <ul className="education_list">
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EXPERIENCE.projectDesc.cosmosModernization.desc1")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EXPERIENCE.projectDesc.cosmosModernization.desc2")}</p>
+            </li>
+            <li>
+              <BiCheck className="education_list-icon" />
+              <p>{t("EXPERIENCE.projectDesc.cosmosModernization.desc3")}</p>
             </li>
           </ul>
         </article>

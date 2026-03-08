@@ -1,75 +1,113 @@
 {
   "HEADER": {
-    "cv": "Dowland CV",
+    "cv": "Download CV",
     "contactButton": "Contact Me",
-    "greeting": "Hello I'm",
+    "greeting": "Hello, I'm",
     "profession": "Frontend Developer",
     "scrollDown": "Scroll Down"
   },
-  
   "ABOUT": {
     "title": "About Me",
-    "subtitle": "Get to Know",
+    "subtitle": "Get to Know Me",
     "firstCardTitle": "Experience",
-    "firstCardDesc": "2+ year of active coding experience",
+    "firstCardDesc": "4+ years of active coding experience",
     "secondCardTitle": "Certificates",
-    "secondCardDesc": "10+ Certificates in the front-end field",
+    "secondCardDesc": "10+ certificates in Frontend development",
     "thirdCardTitle": "Work Experience",
-    "thirdCardDesc": "1.5 year professional experience",
-    "aboutMeDesc1": "I was born in 1995 in Sinop. After completing my master's degree and military service, I started focusing on software development, a field I've been passionate about since childhood and believe will shape the future.",
-    "aboutMeDesc2": "More than two years, I have been improving my skills in front-end development. I have experience with HTML, CSS, JavaScript, React, Next.js, Redux, TypeScript, REST API, Tailwind CSS, Material UI, Ant Design, and Dev Extreme. I have worked on projects like the BSH Milkrun Project and the COSMOS Modernization Project under NTT DATA Business Solutions, and I am currently a Frontend Developer on a project supporting Environmental, Social, and Governance (ESG) initiatives.",
-    "aboutMeDesc3": "You can check out the details of the projects I’ve worked on in the Experience section below. I also share the projects I develop to improve my skills on GitHub, and you can check out some of them in the Projects section below.",
+    "thirdCardDesc": "3 years of professional experience",
+    "aboutMeDesc1": "As a Frontend Developer, I build modern and scalable web interfaces using React, TypeScript, and Next.js. I have been working in frontend development for over three years and actively contribute to enterprise-level projects.",
+    "aboutMeDesc2": "At NTT DATA Business Solutions, I worked on projects focused on logistics, sustainability, and operational management. I contributed to frontend development in enterprise applications such as BSH Milkrun, COSMOS Modernization, the Implika ESG Platform, and systems developed for Daimler Truck.",
+    "aboutMeDesc3": "I focus on user experience, performance, and sustainable component architecture while developing modern frontend solutions within the React ecosystem.",
+    "aboutMeDesc4": "You can review my work in the experience section below or explore the applications I have built through my GitHub profile.",
     "contactButton": "Contact Me"
   },
   "SKILLS": {
-    "title": "What Are My Skills",
+    "title": "My Skills",
     "subtitle": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "stateManagement": "State Management",
+      "dataForms": "Data & Forms",
+      "styling": "Styling",
+      "uiLibraries": "UI Libraries",
+      "tools": "Tools",
+      "other": "Other"
+    },
+    "skills": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript",
+      "redux": "Redux",
+      "reduxToolkit": "Redux Toolkit",
+      "zustand": "Zustand",
+      "contextApi": "Context API",
+      "reactQuery": "React Query",
+      "reactHookForm": "React Hook Form",
+      "restApi": "REST API",
+      "tailwind": "Tailwind CSS",
+      "scss": "SCSS / Sass",
+      "styledComponents": "Styled Components",
+      "materialUi": "Material UI",
+      "mantineUi": "Mantine UI",
+      "devExtreme": "DevExtreme",
+      "git": "Git",
+      "github": "GitHub",
+      "figma": "Figma",
+      "componentArchitecture": "Component-Based Architecture",
+      "responsiveDesign": "Responsive Design",
+      "agileScrum": "Agile & Scrum"
+    },
     "frontendDevelopment": "Frontend Development",
     "otherTools": "Other Tools I Use",
     "language": "Language",
     "english": "English (B1)"
   },
-  "EXPERIENCE":{
-    "title":"Projects I Have Worked On",
-    "subtitle":"My Experience",
-    "projects":{
-      "nttData1":"BSH Milkrun Project",
-      "nttData2":"COSMOS Modernization Project",
-      "nttData3":"BTS ESG Project"
+  "EXPERIENCE": {
+    "title": "Projects I Worked On",
+    "subtitle": "Experience",
+    "projects": {
+      "daimlerTruck": "Mercedes-Benz / Daimler Truck – Enterprise Web Platform",
+      "implikaEsg": "Implika – ESG Assessment and Reporting Platform",
+      "bshMilkrun": "BSH Milkrun – Logistics Tracking System",
+      "cosmosModernization": "COSMOS Modernization Project"
     },
-    "projectDesc":{
-      "nttData1":{
-        "desc1":"The Logistics project mainly focuses on order management, GPS tracking and a notification system.",
-        "desc2":"Developed a web application for managing and tracking logistics, improving operational efficiency for the company.",
-        "desc3":"Engaged in business requirements analysis to ensure the project met company objectives and user expectations.",
-        "desc4":"Technologies utilized include React JS, JavaScript, HTML, CSS, Dev Extreme, and Bootstrap"
+    "projectDesc": {
+      "daimlerTruck": {
+        "desc1": "In this enterprise platform developed for Daimler Truck, I worked on the frontend development of a multi-module system covering operational processes such as working hours tracking, reporting, and cost center management.",
+        "desc2": "I contributed to the development of form management, data tables, role-based authorization, and reporting interfaces.",
+        "desc3": "Technologies Used: React, TypeScript, Vite, Mantine UI, Tailwind CSS, React Query, React Hook Form, REST API"
       },
-      "nttData2":{
-        "desc1":"The Modernization project is dedicated to updating a global application for our client, with a particular focus on managing the technical service processes for home appliances.",
-        "desc2":"Backend API integrations were implemented within the project, and user interfaces were designed to enhance functionality and improve the user experience.",
-        "desc3":"Technologies utilized include HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, and Dev Extreme."
+      "implikaEsg": {
+        "desc1": "I worked on the frontend development of this web application that manages environmental, social, and governance (ESG) processes.",
+        "desc2": "I contributed to the development of dynamic form structures, question–answer flows, data visualization (chart) components, photo upload features, and reporting modules.",
+        "desc3": "Technologies Used: React, TypeScript, Redux Toolkit, Material UI, DevExtreme, REST API"
       },
-      "nttData3":{
-        "desc1":"As a frontend developer at BTS ESG, I contributed to a web application that focuses on environmental, social, and governance (ESG) aspects",
-        "desc2":"The project involves form creation, submission handling, and response collection.",
-        "desc3":"Technologies utilized include HTML, CSS, TypeScript, React JS, Redux Toolkit, Material UI, and Dev Extreme"
+      "bshMilkrun": {
+        "desc1": "The Milkrun project is a web application that digitalizes logistics operations including order management, GPS tracking, and notification systems.",
+        "desc2": "I worked on developing frontend modules related to ramp reservation and shuttle operations.",
+        "desc3": "Technologies Used: React, JavaScript, SCSS, DevExtreme, REST API"
+      },
+      "cosmosModernization": {
+        "desc1": "This project focuses on modernizing the user interface of a web application that manages employee and technical service processes.",
+        "desc2": "I implemented API integrations and restructured the interfaces to improve the overall user experience.",
+        "desc3": "Technologies Used: HTML, CSS, TypeScript, React, Redux Toolkit, React Hook Form, Material UI, and DevExtreme"
       }
     }
-    
   },
   "PROJECTS": {
     "title": "Projects",
-    "intro": "Some of the Work I Have Done",
-    "loadMore": "Load more",
-    "showLess": "Show less",
-    "viewDemo": "Click for Overview",
+    "intro": "Some of My Work",
+    "loadMore": "Load More",
+    "showLess": "Show Less",
+    "viewDemo": "View Demo",
     "projectsList": {
       "starWarsApi": "Star Wars Api",
       "posProject": "Fullstack POS Project",
       "ecommerceReactFirebase": "Ecommerce React-Firebase Website",
-      "libraryGoogleBooks": "Nextjs Library App Google Books Api",
-      "youtubeClone": "TypeScript React Youtube Clone",
-      "movieApp": "Nextjs Movie App",
+      "libraryGoogleBooks": "Next.js Library App Google Books API",
+      "youtubeClone": "TypeScript React YouTube Clone",
+      "movieApp": "Next.js Movie App",
       "weatherApp": "Weather App Context API",
       "getirClone": "Getir.com React-Tailwind Clone",
       "erdemYuksel": "Erdem Yüksel Metal React Website",
@@ -77,66 +115,66 @@
       "spotifyClone": "Spotify React-Tailwind Clone (Mobile Not Supported)",
       "brandColorsClone": "BrandColors React-Tailwind Clone (Mobile Not Supported)",
       "todoApp": "React Redux Todo App",
-      "pokedex": "Vanilla Js Pokemon Api Pokedex"
+      "pokedex": "Vanilla JS Pokemon API Pokedex"
     }
   },
   "EDUCATION": {
-      "title": "Education and Certificates",
-      "subtitle": "My Education",
-      "loadMore": "Load More",
-      "sections": {
-        "technicalCertificates": "Frontend Development Certifications",
-        "schoolLife": "School Life",
-        "softSkill": "Soft Skills Certificates"
-      },
-      "items": {
-        "webProgramming101": "Web Programming-101",
-        "webProgramming201": "Web Programming-201",
-        "webProgramming301": "Web Programming-301",
-        "reactCourses": "React 101-201-301-401",
-        "sinopHighSchool": "Sinop Anatolian High School 2009-2013",
-        "sakaryaTourism": "Sakarya University Faculty of Business Administration / Tourism Management Bachelor 2014-2018",
-        "sakaryaMasters": "Sakarya University Information Systems Master's Degree 2018-2019",
-        "anadoluAssociate": "Anadolu University Computer Programming Associate Degree 2021-2022",
-        "modernWebDevelopment": "Modern Web Development Course: From Scratch to the Heights of the Industry",
-        "reactContextAPI": "React and Context API from Scratch",
-        "completeWebDevelopment": "Developing Complete Web Applications"
-      },
-      "certificates":{
-        "patikaFrontend": "Patika.dev Frontend Web Development",
-        "juniorNtt":"Junior Growth Program",
-        "turkcellReact":"Turkcell Future Writers React 401",
-        "projectManagement":"Project Management",
-        "innovation":"Innovation",
-        "consultantBasics": "Consultant Basics",
-        "One-on-One Mentorship Program": "One on One Mentorship Program",
-        "agile&Scrum": "Agile Project Management and Scrum Methodology"
-      }
+    "title": "Education and Certificates",
+    "subtitle": "My Education",
+    "loadMore": "Load More",
+    "sections": {
+      "technicalCertificates": "Frontend Development Certifications",
+      "schoolLife": "School Life",
+      "softSkill": "Soft Skills Certificates"
     },
-      "CONTACT": {
-        "title": "Contact Me",
-        "subtitle": "Get In Touch",
-        "phone": "Mobile Number",
-        "clickToCall": "Click For Call",
-        "email": "Email",
-        "sendEmail": "Send a Email",
-        "whatsapp": "WhatsApp",
-        "sendMessage": "Send a Message",
-        "form": {
-          "name": "Your Full Name",
-          "email": "Your Email",
-          "message": "Your Message",
-          "submit": "Send a Email",
-          "successMessage": "The message has been sent"
-        }
-      },
-      "FOOTER": {
-          "home": "HomePage",
-          "about": "About",
-          "skills": "Skills",
-          "experience": "Experience",
-          "education": "Education and Certificates",
-          "projects": "Projects",
-          "contact": "Contact"
-      }
+    "items": {
+      "webProgramming101": "Web Programming-101",
+      "webProgramming201": "Web Programming-201",
+      "webProgramming301": "Web Programming-301",
+      "reactCourses": "React 101-201-301-401",
+      "sinopHighSchool": "Sinop Anatolian High School 2009-2013",
+      "sakaryaTourism": "Sakarya University Faculty of Business Administration / Tourism Management Bachelor 2014-2018",
+      "sakaryaMasters": "Sakarya University Information Systems Master's Degree 2018-2019",
+      "anadoluAssociate": "Anadolu University Computer Programming Associate Degree 2021-2022",
+      "modernWebDevelopment": "Modern Web Development Course: From Scratch to the Heights of the Industry",
+      "reactContextAPI": "React and Context API from Scratch",
+      "completeWebDevelopment": "Developing Complete Web Applications"
+    },
+    "certificates": {
+      "patikaFrontend": "Patika.dev Frontend Web Development",
+      "juniorNtt": "Junior Growth Program",
+      "turkcellReact": "Turkcell Future Writers React 401",
+      "projectManagement": "Project Management",
+      "innovation": "Innovation",
+      "consultantBasics": "Consultant Basics",
+      "One-on-One Mentorship Program": "One-on-One Mentorship Program",
+      "agile&Scrum": "Agile Project Management and Scrum Methodology"
+    }
+  },
+  "CONTACT": {
+    "title": "Contact Me",
+    "subtitle": "Get in Touch",
+    "phone": "Phone",
+    "clickToCall": "Click to Call",
+    "email": "Email",
+    "sendEmail": "Send an Email",
+    "whatsapp": "WhatsApp",
+    "sendMessage": "Send a Message",
+    "form": {
+      "name": "Your Full Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send an Email",
+      "successMessage": "Your message has been sent"
+    }
+  },
+  "FOOTER": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education and Certificates",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
 }
