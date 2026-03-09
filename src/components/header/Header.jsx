@@ -2,7 +2,6 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "assets/atifsimsek.png";
 import HeaderSocials from "./HeaderSocials";
-import LanguageButton from "./LanguageButton";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
@@ -25,7 +24,6 @@ const Header = () => {
           {t("HEADER.scrollDown")}
         </a>
       </div>
-      <LanguageButton />
     </header>
   );
 };

@@ -2,6 +2,8 @@ header {
   height: 100vh;
   padding-top: 7rem;
   margin-top: -4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .header-container {
@@ -50,7 +52,12 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--glass-shadow);
+  transition: var(--transition);
+}
+
+.me:hover {
+  box-shadow: var(--glass-hover-shadow);
 }
 
 .me img {
@@ -93,121 +100,222 @@ header {
   .scroll-down {
     display: none;
   }
+
+  .language-button {
+    top: 1rem;
+    left: 0.8rem;
+  }
 }
 
 /* ****** Language Button ****** */
-.language-button {
+/* Language Toggle Container - Top Left Position */
+.language-toggle-container {
   position: fixed;
   top: 1.2rem;
-  right: 1rem;
+  left: 1rem;
   z-index: 100;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.switch > span {
-  position: absolute;
-  top: 8px;
-  pointer-events: none;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-  width: 50%;
-  text-align: center;
-}
-
-input.check-toggle-round-flat:checked ~ .off {
-  color: var(--color-primary);
-}
-
-input.check-toggle-round-flat:checked ~ .on {
-  color: var(--color-bg);
-}
-
-.switch > span.on {
-  left: 0.5px;
-  padding-left: 2px;
-  color: var(--color-primary);
-}
-
-.switch > span.off {
-  right: 0.5px;
-  padding-right: 4px;
-  color: var(--color-bg);
-}
-
-.check-toggle {
-  position: absolute;
-  margin-left: -9999px;
-  visibility: hidden;
-}
-
-.check-toggle + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-input.check-toggle-round-flat + label {
-  padding: 2px;
-  width: 78px;
+/* Language Toggle Button */
+.language-toggle-btn {
+  width: 70px;
   height: 35px;
-  background-color: var(--color-primary);
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition);
+  border: 2px solid var(--color-primary);
+  overflow: hidden;
+  padding: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--glass-shadow);
 }
 
-input.check-toggle-round-flat + label:before,
-input.check-toggle-round-flat + label:after {
-  display: block;
+[data-theme="light"] .language-toggle-btn {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.12);
+}
+
+.language-toggle-btn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--glass-hover-shadow);
+}
+
+[data-theme="light"] .language-toggle-btn:hover {
+  box-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.18);
+}
+
+.language-toggle-btn:active {
+  transform: scale(0.98);
+}
+
+/* Slider Inside Button */
+.language-toggle-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* Language Icon Styling */
+.language-icon {
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: all 0.3s ease;
+  width: 27px;
+  height: 27px;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tr-icon {
+  left: 3px;
+  color: var(--color-primary);
+}
+
+.en-icon {
+  right: 3px;
+  color: var(--color-primary);
+}
+
+/* Sliding Circle - Tema butonu ile aynı */
+.language-toggle-btn::before {
   content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+  z-index: 2;
 }
 
-input.check-toggle-round-flat + label:before {
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  right: 2px;
-  background-color: var(--color-primary);
-  -webkit-moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
+/* Turkish Mode State */
+.language-toggle-btn.turkish::before {
+  left: 3px;
+  background: linear-gradient(145deg, #2a2a3e, #1f1f38);
 }
 
-input.check-toggle-round-flat + label:after {
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
-  width: 36px;
-  background-color: var(--color-bg);
-  -webkit-border-radius: 52px;
-  -moz-border-radius: 52px;
-  -ms-border-radius: 52px;
-  -o-border-radius: 52px;
-  border-radius: 52px;
-  -webkit-transition: margin 0.2s;
-  -moz-transition: margin 0.2s;
-  -o-transition: margin 0.2s;
-  transition: margin 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+.language-toggle-btn.turkish .tr-icon {
+  color: var(--color-white);
+  font-weight: 500;
+  opacity: 0.85;
 }
 
-input.check-toggle-round-flat:checked + label:after {
-  margin-left: 34px;
+.language-toggle-btn.turkish .en-icon {
+  color: var(--color-primary);
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+/* English Mode State */
+.language-toggle-btn.english::before {
+  left: calc(100% - 30px);
+  background: linear-gradient(145deg, #2a2a3e, #1f1f38);
+}
+
+.language-toggle-btn.english .en-icon {
+  color: var(--color-white);
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.language-toggle-btn.english .tr-icon {
+  color: var(--color-primary);
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+/* Light mode için tema butonu ile aynı circle */
+[data-theme="light"] .language-toggle-btn::before {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(240, 240, 250, 0.3)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+[data-theme="light"] .tr-icon,
+[data-theme="light"] .en-icon {
+  color: var(--color-text);
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+[data-theme="light"] .language-toggle-btn.turkish .tr-icon {
+  color: var(--color-primary);
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+[data-theme="light"] .language-toggle-btn.english .en-icon {
+  color: var(--color-primary);
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .language-toggle-container {
+    top: 1rem;
+    left: 0.8rem;
+  }
+
+  .language-toggle-btn {
+    width: 60px;
+    height: 30px;
+  }
+
+  .language-toggle-btn::before {
+    width: 23px;
+    height: 23px;
+  }
+
+  .language-icon {
+    font-size: 9px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .tr-icon {
+    left: 2px;
+  }
+
+  .en-icon {
+    right: 2px;
+  }
+
+  .language-toggle-btn.english::before {
+    left: calc(100% - 25px);
+  }
+}
+
+/* Touch Device Adjustments */
+@media (pointer: coarse) {
+  .language-toggle-btn:hover {
+    transform: none;
+  }
+
+  .language-toggle-btn:active {
+    transform: scale(0.95);
+  }
 }

@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./header.css";
 import { useTranslation } from "react-i18next";
 
 const LanguageButton = () => {
   const { i18n } = useTranslation();
-  const [checked, setChecked] = useState(i18n.language === "en");
-
-  useEffect(() => {
-    setChecked(i18n.language === "en");
-  }, [i18n.language]);
+  const isEnglish = i18n.language === "en";
 
   const toggleLanguage = () => {
     if (i18n.language === "tr") {
@@ -18,25 +14,18 @@ const LanguageButton = () => {
     }
   };
 
-  const handleToggle = () => {
-    toggleLanguage();
-    setChecked(!checked);
-  };
-
   return (
-    <div className="language-button">
-      <div className="switch">
-        <input
-          id="language-toggle"
-          className="check-toggle check-toggle-round-flat"
-          type="checkbox"
-          checked={checked}
-          onChange={handleToggle}
-        />
-        <label htmlFor="language-toggle"></label>
-        <span className="on">Tr</span>
-        <span className="off">EN</span>
-      </div>
+    <div className="language-toggle-container">
+      <button
+        className={`language-toggle-btn ${isEnglish ? "english" : "turkish"}`}
+        onClick={toggleLanguage}
+        aria-label="Toggle language"
+      >
+        <div className="language-toggle-slider">
+          <div className="language-icon tr-icon">TR</div>
+          <div className="language-icon en-icon">EN</div>
+        </div>
+      </button>
     </div>
   );
 };

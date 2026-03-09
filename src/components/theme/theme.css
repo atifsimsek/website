@@ -1,0 +1,188 @@
+/* Theme Toggle Container - Top Right Position */
+.theme-toggle-container {
+  position: fixed;
+  top: 1.2rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  width: 70px;
+  height: 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition);
+  border: 2px solid var(--color-primary);
+  overflow: hidden;
+  padding: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--glass-shadow);
+}
+
+[data-theme="light"] .theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.12);
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--glass-hover-shadow);
+}
+
+[data-theme="light"] .theme-toggle-btn:hover {
+  box-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.18);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.98);
+}
+
+/* Slider Inside Button */
+.theme-toggle-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* Icon Styling */
+.theme-icon {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 27px;
+  height: 27px;
+  position: absolute;
+}
+
+.sun-icon {
+  color: #ffd700;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.moon-icon {
+  color: #c5c5ff;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Sliding Circle Background */
+.theme-toggle-btn::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+/* Dark Mode State */
+.theme-toggle-btn.dark::before {
+  right: 3px;
+  background: linear-gradient(145deg, #2a2a3e, #1f1f38);
+}
+
+.theme-toggle-btn.dark .moon-icon {
+  opacity: 1;
+  transform: translateY(-50%) rotate(0deg) scale(1);
+}
+
+.theme-toggle-btn.dark .sun-icon {
+  opacity: 0.5;
+  transform: translateY(-50%) rotate(180deg) scale(0.7);
+}
+
+/* Light Mode State */
+.theme-toggle-btn.light::before {
+  left: 3px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(240, 240, 250, 0.12)
+  ) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.theme-toggle-btn.light .sun-icon {
+  opacity: 1;
+  transform: translateY(-50%) rotate(0deg) scale(1);
+}
+
+.theme-toggle-btn.light .moon-icon {
+  opacity: 0.8;
+  transform: translateY(-50%) rotate(-180deg) scale(0.7);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .theme-toggle-container {
+    top: 1rem;
+    right: 0.8rem;
+  }
+
+  .theme-toggle-btn {
+    width: 60px;
+    height: 30px;
+  }
+
+  .theme-toggle-btn::before {
+    width: 23px;
+    height: 23px;
+  }
+
+  .theme-icon {
+    font-size: 14px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .sun-icon {
+    left: 1.8px;
+  }
+
+  .moon-icon {
+    right: 2px;
+  }
+
+  .theme-toggle-btn.light::before {
+    left: 2px;
+  }
+
+  .theme-toggle-btn.dark::before {
+    right: 2px;
+  }
+}
+
+/* Touch Device Adjustments */
+@media (pointer: coarse) {
+  .theme-toggle-btn:hover {
+    transform: none;
+  }
+
+  .theme-toggle-btn:active {
+    transform: scale(0.95);
+  }
+}

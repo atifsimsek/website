@@ -18,18 +18,38 @@
 }
 
 .contact-option {
-  background: var(--color-bg-variant);
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
-  border: 1px solid transparent;
+  border: 1px solid var(--glass-border);
   transition: var(--transition);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--glass-shadow);
+}
+
+[data-theme="light"] .contact-option {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.12);
 }
 
 .contact-option:hover {
-  background: transparent;
-  border-color: var(---primary-variant);
+  background: var(--color-primary-variant);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: var(--color-primary);
+  transform: translateY(-5px);
+  box-shadow: var(--glass-hover-shadow);
+}
+
+[data-theme="light"] .contact-option:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: var(--color-primary);
+  box-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.2);
 }
 
 .contact-option-icon {
@@ -59,11 +79,36 @@ textarea {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  background: transparent;
-  border: 2px solid var(--color-primary-variant);
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid var(--glass-border);
   resize: none;
-  color: var(--text-white);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: var(--color-white);
+  box-shadow: var(--glass-shadow);
+  transition: var(--transition);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.12);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: var(--glass-hover-shadow);
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.25);
 }
 
 /* ***** Email Send ***** */
@@ -71,7 +116,9 @@ textarea {
 .email-send {
   position: absolute;
   width: 20rem;
-  background-color: var(--color-bg-variant);
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   bottom: 3.5rem;
   right: 1.5rem;
   padding: 1.7rem 1rem;
@@ -79,9 +126,18 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  border: 1px solid var(--glass-border);
   transition: all 1100ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: translate(400px);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--glass-shadow);
+}
+
+[data-theme="light"] .email-send {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.15);
 }
 
 .email-send .icon {

@@ -8,15 +8,28 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  /* Dark Mode (Default) - Daha koyu */
+  --color-bg: #0a0a1a;
+  --color-bg-variant: #1a1a3a;
+  --color-primary: #3498db;
+  --color-primary-variant: rgba(52, 152, 219, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-text: #fff;
+  --color-text-secondary: rgba(255, 255, 255, 0.65);
+
+  /* Glass Effect - Dark Mode */
+  --glass-bg: rgba(26, 26, 58, 0.4);
+  --glass-border: rgba(52, 152, 219, 0.25);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  --glass-hover-shadow: 0 12px 40px 0 rgba(52, 152, 219, 0.4);
 
   --transition: all 400ms ease;
 
@@ -25,8 +38,22 @@
   --container-width-sm: 90%;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Light Mode - Yumuşak tonlar */
+[data-theme="light"] {
+  --color-bg: #e0e0e0;
+  --color-bg-variant: #f5f5f5;
+  --color-primary: #4a9ded;
+  --color-primary-variant: rgba(74, 157, 237, 0.15);
+  --color-white: #1e3a8a;
+  --color-light: rgba(30, 58, 138, 0.65);
+  --color-text: #1e3a8a;
+  --color-text-secondary: rgba(30, 58, 138, 0.65);
+
+  /* Glass Effect for Light Mode - Soft Pastel Glass */
+  --glass-bg: rgba(180, 215, 250, 0.32);
+  --glass-border: rgba(160, 205, 245, 0.55);
+  --glass-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.13);
+  --glass-hover-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.2);
 }
 
 ::-webkit-scrollbar {
@@ -39,6 +66,53 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(../src/assets/bg-texture.png);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+  position: relative;
+}
+
+[data-theme="light"] body {
+  background: linear-gradient(135deg, #e0e0e0 0%, #d4d4d8 100%);
+  background-attachment: fixed;
+}
+
+/* Glass overlay effect on background - Buğulu cam */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      var(--color-primary-variant) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      var(--color-primary-variant) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 50% 20%,
+      var(--color-primary-variant) 0%,
+      transparent 40%
+    );
+  backdrop-filter: blur(120px);
+  -webkit-backdrop-filter: blur(120px);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Light mode için daha yumuşak glass efekt */
+[data-theme="light"] body::before {
+  opacity: 0.25;
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
 }
 
 /* ****** GENERAL STYLES  ****** */
@@ -46,6 +120,8 @@ body {
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 h1,
@@ -57,11 +133,13 @@ h5 {
 }
 
 h1 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
 
 section {
   margin-top: 8rem;
+  position: relative;
+  z-index: 1;
 }
 
 section > h2,
@@ -100,20 +178,41 @@ a:hover {
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 2px solid var(--glass-border);
   transition: var(--transition);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--glass-shadow);
 }
 
 .btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
-  border-color: transparent;
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--glass-hover-shadow);
+}
+
+[data-theme="light"] .btn {
+  color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+[data-theme="light"] .btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+  box-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.25);
 }
 
 .btn-primary {
   background: var(--color-primary);
-  color: var(--color-bg);
+  color: #fff;
 }
 
 img {

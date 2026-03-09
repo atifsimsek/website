@@ -16,7 +16,12 @@
   );
   display: grid;
   place-items: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--glass-shadow);
+  transition: var(--transition);
+}
+
+.about-me:hover {
+  box-shadow: var(--glass-hover-shadow);
 }
 
 .about-me-image {
@@ -27,7 +32,12 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--glass-shadow);
+}
+
+.about-me-image:hover {
+  transform: rotate(0deg);
+  box-shadow: var(--glass-hover-shadow);
 }
 
 .about-me-image img {
@@ -49,19 +59,39 @@
 }
 
 .about-card {
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--glass-shadow);
+}
+
+[data-theme="light"] .about-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.12);
 }
 
 .about-card:hover {
-  background: transparent;
-  background-color: var(--color-primary-variant);
+  background: var(--color-primary-variant);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: var(--color-primary);
   cursor: default;
+  transform: translateY(-5px);
+  box-shadow: var(--glass-hover-shadow);
+}
+
+[data-theme="light"] .about-card:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: var(--color-primary);
+  box-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.2);
 }
 
 .about-icon {

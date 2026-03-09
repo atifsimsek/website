@@ -7,6 +7,9 @@ import Navbar from "components/navbar/Navbar";
 import Portfolio from "components/portfolio/Portfolio";
 import Education from "components/education/education";
 import Experience from "components/experience/Experience";
+import { ThemeProvider } from "components/theme/ThemeContext";
+import ThemeToggle from "components/theme/ThemeToggle";
+import LanguageButton from "components/header/LanguageButton";
 import { useEffect } from "react";
 
 function App() {
@@ -27,7 +30,9 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ThemeProvider>
+      <ThemeToggle />
+      <LanguageButton />
       <Header />
       <Navbar />
       <About />
@@ -37,7 +42,7 @@ function App() {
       <Education />
       <Contact />
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

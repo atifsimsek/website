@@ -1,5 +1,7 @@
 nav {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
@@ -11,25 +13,62 @@ nav {
   display: flex;
   gap: 0.8rem;
   border-radius: 3rem;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+[data-theme="light"] nav {
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.15);
 }
 
 nav a {
-  background: transparent;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
   font-size: 1.1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+[data-theme="light"] nav a {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  font-weight: 500;
 }
 
 nav a:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--color-primary-variant);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-color: var(--color-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px 0 rgba(52, 152, 219, 0.4);
+}
+
+[data-theme="light"] nav a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 20px 0 rgba(74, 157, 237, 0.3);
 }
 
 nav a.active {
   background: var(--color-primary) !important;
   color: var(--color-bg);
+  box-shadow: 0 8px 20px 0 rgba(52, 152, 219, 0.5);
+}
+
+[data-theme="light"] nav a.active {
+  background: var(--color-primary) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 20px 0 rgba(74, 157, 237, 0.4);
 }
 
 /* ****** MEDİUM DEVİCES ****** */
@@ -53,6 +92,20 @@ nav a.active {
 
 @media (pointer: coarse) {
   nav a:hover {
-    background: none;
+    background: var(--glass-bg);
+    transform: none;
+    box-shadow: none;
+  }
+
+  [data-theme="light"] nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  nav a.active:hover {
+    box-shadow: 0 8px 20px 0 rgba(52, 152, 219, 0.5);
+  }
+
+  [data-theme="light"] nav a.active:hover {
+    box-shadow: 0 8px 20px 0 rgba(74, 157, 237, 0.4);
   }
 }

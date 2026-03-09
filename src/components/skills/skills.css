@@ -5,20 +5,38 @@
 }
 
 .skill-category {
-  background: var(--color-bg-variant);
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   padding: 2rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--glass-border);
   transition: var(--transition);
-  box-shadow:
-    rgba(0, 0, 0, 0.16) 0px 3px 6px,
-    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--glass-shadow);
+}
+
+[data-theme="light"] .skill-category {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1.8em 3.7em rgba(74, 157, 237, 0.12);
 }
 
 .skill-category:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
+  background: var(--color-primary-variant);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: var(--color-primary);
   cursor: default;
+  transform: translateY(-5px);
+  box-shadow: var(--glass-hover-shadow);
+}
+
+[data-theme="light"] .skill-category:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: var(--color-primary);
+  box-shadow: 0 2.2em 4.5em rgba(74, 157, 237, 0.2);
 }
 
 .skill-category h3 {
