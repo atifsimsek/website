@@ -1,5 +1,5 @@
-import CvTr from "assets/CV-Atif-Simsek-TR.pdf";
-import CvEn from "assets/CV-Atif-Simsek-EN.pdf";
+import CvTr from "assets/CV_Atif_Simsek_TR.pdf";
+import CvEn from "assets/CV_Atif_Simsek_EN.pdf";
 import { useTranslation } from "react-i18next";
 
 const CTA = () => {
@@ -13,7 +13,7 @@ const CTA = () => {
         className="btn"
         href={i18n?.language === "tr" ? CvTr : CvEn}
         download={
-          i18n?.language === "tr" ? "CV-Atif-Simsek-TR" : "CV-Atif-Simsek-EN"
+          i18n?.language === "tr" ? "CV_Atif_Simsek_TR" : "CV_Atif_Simsek_EN"
         }
       >
         {t("HEADER.cv")}
